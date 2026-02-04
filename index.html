@@ -1,0 +1,1818 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Чистая Аура — Инвестиции в роботизированные автомойки | Окупаемость 12-18 мес</title>
+    <meta name="description" content="Инвестируйте в роботизированные автомойки. Окупаемость 12-18 месяцев, доходность до 80%. 280+ работающих объектов. Вход от 6.5 млн ₽.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --deep-blue: #0A192F;
+            --accent-turquoise: #64FFDA;
+            --white: #FFFFFF;
+            --graphite: #1D2D44;
+            --light-gray: #F8F9FA;
+            --text-gray: #8892B0;
+            --gold: #FFD700;
+            --gradient-dark: linear-gradient(135deg, #0A192F 0%, #112240 100%);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--white);
+            background-color: var(--deep-blue);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        .number-font {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+
+        /* Navigation */
+        .nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 20px 0;
+            background: rgba(10, 25, 47, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            border-bottom: 1px solid rgba(100, 255, 218, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 24px;
+            font-weight: 800;
+            color: var(--accent-turquoise);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 40px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--white);
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            transition: color 0.3s;
+            position: relative;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent-turquoise);
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--accent-turquoise);
+            transition: width 0.3s;
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .nav-phone {
+            color: var(--accent-turquoise);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            border: 1px solid var(--accent-turquoise);
+            padding: 10px 20px;
+            border-radius: 4px;
+            transition: all 0.3s;
+        }
+
+        .nav-phone:hover {
+            background: rgba(100, 255, 218, 0.1);
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            color: var(--accent-turquoise);
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            background: var(--gradient-dark);
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                radial-gradient(circle at 20% 50%, rgba(100, 255, 218, 0.05) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(100, 255, 218, 0.03) 0%, transparent 50%);
+            pointer-events: none;
+        }
+
+        .hero-grid {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: 
+                linear-gradient(rgba(100, 255, 218, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(100, 255, 218, 0.03) 1px, transparent 1px);
+            background-size: 50px 50px;
+            opacity: 0.5;
+        }
+
+        .hero-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 120px 20px 80px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            padding: 8px 16px;
+            background: rgba(100, 255, 218, 0.1);
+            border: 1px solid var(--accent-turquoise);
+            border-radius: 20px;
+            color: var(--accent-turquoise);
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 30px;
+            animation: fadeInUp 0.8s ease;
+        }
+
+        .hero h1 {
+            font-size: clamp(36px, 5vw, 64px);
+            margin-bottom: 24px;
+            max-width: 800px;
+            animation: fadeInUp 0.8s ease 0.2s both;
+        }
+
+        .hero h1 span {
+            color: var(--accent-turquoise);
+        }
+
+        .hero-subtitle {
+            font-size: 20px;
+            color: var(--text-gray);
+            max-width: 600px;
+            margin-bottom: 40px;
+            animation: fadeInUp 0.8s ease 0.4s both;
+        }
+
+        .hero-stats {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+            margin-bottom: 50px;
+            animation: fadeInUp 0.8s ease 0.6s both;
+        }
+
+        .stat-item {
+            text-align: left;
+        }
+
+        .stat-number {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 48px;
+            font-weight: 700;
+            color: var(--accent-turquoise);
+            display: block;
+            line-height: 1;
+            margin-bottom: 8px;
+        }
+
+        .stat-label {
+            font-size: 14px;
+            color: var(--text-gray);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .hero-cta {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            animation: fadeInUp 0.8s ease 0.8s both;
+        }
+
+        .btn-primary {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 18px 40px;
+            background: var(--accent-turquoise);
+            color: var(--deep-blue);
+            text-decoration: none;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 16px;
+            border-radius: 4px;
+            transition: all 0.3s;
+            border: none;
+            cursor: pointer;
+            width: fit-content;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(100, 255, 218, 0.3);
+        }
+
+        .hero-note {
+            font-size: 14px;
+            color: var(--text-gray);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .scroll-indicator {
+            position: absolute;
+            bottom: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            color: var(--accent-turquoise);
+            font-size: 12px;
+            animation: bounce 2s infinite;
+            cursor: pointer;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateX(-50%) translateY(0); }
+            40% { transform: translateX(-50%) translateY(-10px); }
+            60% { transform: translateX(-50%) translateY(-5px); }
+        }
+
+        /* Section Styles */
+        section {
+            padding: 100px 0;
+            position: relative;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .section-header {
+            margin-bottom: 60px;
+        }
+
+        .section-tag {
+            color: var(--accent-turquoise);
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 16px;
+            display: block;
+        }
+
+        .section-title {
+            font-size: clamp(32px, 4vw, 48px);
+            margin-bottom: 20px;
+        }
+
+        .section-subtitle {
+            font-size: 18px;
+            color: var(--text-gray);
+            max-width: 600px;
+        }
+
+        /* Market Section */
+        .market {
+            background: var(--white);
+            color: var(--deep-blue);
+        }
+
+        .market .section-title,
+        .market .section-subtitle {
+            color: var(--deep-blue);
+        }
+
+        .market-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .market-card {
+            padding: 40px;
+            background: var(--light-gray);
+            border-radius: 8px;
+            border-left: 4px solid var(--accent-turquoise);
+            transition: transform 0.3s;
+        }
+
+        .market-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .market-number {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 56px;
+            font-weight: 700;
+            color: var(--deep-blue);
+            margin-bottom: 10px;
+        }
+
+        .market-label {
+            font-size: 16px;
+            color: var(--graphite);
+            font-weight: 600;
+        }
+
+        .market-desc {
+            font-size: 14px;
+            color: #666;
+            margin-top: 10px;
+        }
+
+        /* Comparison Section */
+        .comparison {
+            background: var(--deep-blue);
+        }
+
+        .comparison-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .comparison-card {
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(100, 255, 218, 0.1);
+            border-radius: 8px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .comparison-card.featured {
+            background: rgba(100, 255, 218, 0.05);
+            border-color: var(--accent-turquoise);
+            transform: scale(1.05);
+        }
+
+        .comparison-card.featured::before {
+            content: 'НАШЕ РЕШЕНИЕ';
+            position: absolute;
+            top: 0;
+            right: 0;
+            background: var(--accent-turquoise);
+            color: var(--deep-blue);
+            padding: 5px 15px;
+            font-size: 10px;
+            font-weight: 700;
+            border-bottom-left-radius: 8px;
+        }
+
+        .comparison-title {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: var(--white);
+        }
+
+        .comparison-card.featured .comparison-title {
+            color: var(--accent-turquoise);
+        }
+
+        .comparison-list {
+            list-style: none;
+            margin-bottom: 30px;
+        }
+
+        .comparison-list li {
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            font-size: 14px;
+            color: var(--text-gray);
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+
+        .comparison-list li::before {
+            content: '•';
+            color: var(--accent-turquoise);
+            font-weight: bold;
+        }
+
+        .comparison-metric {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 36px;
+            font-weight: 700;
+        }
+
+        .comparison-card.featured .comparison-metric {
+            color: var(--accent-turquoise);
+        }
+
+        .comparison-card:not(.featured) .comparison-metric {
+            color: #ff6b6b;
+        }
+
+        /* Economics Section */
+        .economics {
+            background: var(--graphite);
+        }
+
+        .economics-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            margin-bottom: 60px;
+        }
+
+        .investment-block {
+            background: rgba(10, 25, 47, 0.5);
+            padding: 40px;
+            border-radius: 8px;
+            border: 1px solid rgba(100, 255, 218, 0.2);
+        }
+
+        .investment-title {
+            font-size: 24px;
+            margin-bottom: 30px;
+            color: var(--accent-turquoise);
+        }
+
+        .investment-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 15px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 16px;
+        }
+
+        .investment-item.total {
+            border-top: 2px solid var(--accent-turquoise);
+            border-bottom: none;
+            margin-top: 20px;
+            padding-top: 20px;
+            font-weight: 700;
+            font-size: 24px;
+            color: var(--accent-turquoise);
+        }
+
+        .table-container {
+            overflow-x: auto;
+        }
+
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        .data-table th,
+        .data-table td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .data-table th {
+            color: var(--accent-turquoise);
+            font-weight: 600;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .data-table td {
+            font-size: 16px;
+        }
+
+        .data-table .highlight {
+            color: var(--accent-turquoise);
+            font-weight: 700;
+        }
+
+        .scenarios {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin-top: 60px;
+        }
+
+        .scenario-card {
+            background: rgba(10, 25, 47, 0.5);
+            padding: 30px;
+            border-radius: 8px;
+            border-top: 4px solid var(--accent-turquoise);
+            transition: transform 0.3s;
+        }
+
+        .scenario-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .scenario-card.middle {
+            background: rgba(100, 255, 218, 0.1);
+            border-top-width: 6px;
+        }
+
+        .scenario-title {
+            font-size: 18px;
+            margin-bottom: 20px;
+            color: var(--accent-turquoise);
+        }
+
+        .scenario-metric {
+            margin-bottom: 15px;
+        }
+
+        .scenario-label {
+            font-size: 12px;
+            color: var(--text-gray);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+        }
+
+        .scenario-value {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--white);
+        }
+
+        .economics-summary {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+            margin-top: 60px;
+            padding-top: 60px;
+            border-top: 1px solid rgba(100, 255, 218, 0.2);
+        }
+
+        .summary-item {
+            text-align: center;
+        }
+
+        .summary-number {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 48px;
+            font-weight: 700;
+            color: var(--accent-turquoise);
+            display: block;
+        }
+
+        .summary-label {
+            font-size: 14px;
+            color: var(--text-gray);
+            margin-top: 10px;
+        }
+
+        /* Locations Section */
+        .locations {
+            background: var(--white);
+            color: var(--deep-blue);
+        }
+
+        .locations .section-title,
+        .locations .section-subtitle {
+            color: var(--deep-blue);
+        }
+
+        .locations-stats {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+
+        .location-stat {
+            text-align: center;
+            padding: 30px;
+            background: var(--light-gray);
+            border-radius: 8px;
+        }
+
+        .location-stat-number {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 48px;
+            font-weight: 700;
+            color: var(--deep-blue);
+        }
+
+        .location-stat-label {
+            font-size: 14px;
+            color: #666;
+            margin-top: 10px;
+        }
+
+        .locations-list {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .location-item {
+            padding: 30px;
+            background: var(--light-gray);
+            border-radius: 8px;
+            border-left: 4px solid var(--accent-turquoise);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: all 0.3s;
+        }
+
+        .location-item:hover {
+            transform: translateX(10px);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        .location-info h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .location-meta {
+            display: flex;
+            gap: 20px;
+            font-size: 14px;
+            color: #666;
+        }
+
+        .location-badge {
+            background: var(--accent-turquoise);
+            color: var(--deep-blue);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 700;
+        }
+
+        /* Risks Section */
+        .risks {
+            background: var(--deep-blue);
+        }
+
+        .risks-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+        }
+
+        .risk-card {
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(100, 255, 218, 0.1);
+            border-radius: 8px;
+            position: relative;
+        }
+
+        .risk-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .risk-icon {
+            width: 50px;
+            height: 50px;
+            background: rgba(255, 107, 107, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #ff6b6b;
+            font-size: 20px;
+        }
+
+        .risk-title {
+            font-size: 20px;
+            color: #ff6b6b;
+        }
+
+        .risk-solution {
+            background: rgba(100, 255, 218, 0.05);
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 3px solid var(--accent-turquoise);
+        }
+
+        .risk-solution-label {
+            font-size: 12px;
+            color: var(--accent-turquoise);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .risk-solution p {
+            color: var(--text-gray);
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        /* Support Section */
+        .support {
+            background: var(--graphite);
+        }
+
+        .support-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .support-card {
+            padding: 40px;
+            background: rgba(10, 25, 47, 0.5);
+            border-radius: 8px;
+            text-align: center;
+            transition: all 0.3s;
+            border: 1px solid transparent;
+        }
+
+        .support-card:hover {
+            border-color: var(--accent-turquoise);
+            transform: translateY(-5px);
+        }
+
+        .support-icon {
+            width: 80px;
+            height: 80px;
+            background: rgba(100, 255, 218, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            color: var(--accent-turquoise);
+            font-size: 32px;
+        }
+
+        .support-title {
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+
+        .support-desc {
+            font-size: 14px;
+            color: var(--text-gray);
+            line-height: 1.6;
+        }
+
+        /* CTA Section */
+        .cta {
+            background: var(--gradient-dark);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(100, 255, 218, 0.05) 0%, transparent 70%);
+            animation: rotate 20s linear infinite;
+        }
+
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        .cta-content {
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .cta h2 {
+            font-size: clamp(32px, 4vw, 48px);
+            margin-bottom: 20px;
+        }
+
+        .cta-subtitle {
+            font-size: 18px;
+            color: var(--text-gray);
+            margin-bottom: 40px;
+        }
+
+        .form-container {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 50px;
+            border-radius: 8px;
+            border: 1px solid rgba(100, 255, 218, 0.2);
+            backdrop-filter: blur(10px);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-size: 14px;
+            color: var(--accent-turquoise);
+            font-weight: 500;
+        }
+
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(100, 255, 218, 0.2);
+            border-radius: 4px;
+            color: var(--white);
+            font-size: 16px;
+            transition: all 0.3s;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: var(--accent-turquoise);
+            background: rgba(100, 255, 218, 0.05);
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .btn-submit {
+            width: 100%;
+            padding: 18px;
+            background: var(--accent-turquoise);
+            color: var(--deep-blue);
+            border: none;
+            border-radius: 4px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 16px;
+            cursor: pointer;
+            transition: all 0.3s;
+            margin-top: 10px;
+        }
+
+        .btn-submit:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(100, 255, 218, 0.3);
+        }
+
+        .contacts {
+            margin-top: 40px;
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--text-gray);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .contact-item:hover {
+            color: var(--accent-turquoise);
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--deep-blue);
+            padding: 40px 0;
+            border-top: 1px solid rgba(100, 255, 218, 0.1);
+            text-align: center;
+            color: var(--text-gray);
+            font-size: 14px;
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease;
+        }
+
+        .animate-on-scroll.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 968px) {
+            .nav-links {
+                display: none;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .hero-stats {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .market-grid,
+            .comparison-grid,
+            .scenarios,
+            .economics-summary,
+            .locations-stats {
+                grid-template-columns: 1fr;
+            }
+
+            .economics-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .risks-grid,
+            .support-grid,
+            .locations-list {
+                grid-template-columns: 1fr;
+            }
+
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+
+            .comparison-card.featured {
+                transform: none;
+            }
+
+            .scenario-card.middle {
+                order: -1;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-stats {
+                grid-template-columns: 1fr;
+            }
+
+            .stat-number {
+                font-size: 36px;
+            }
+
+            .economics-summary {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .summary-number {
+                font-size: 32px;
+            }
+        }
+
+        /* Utility Classes */
+        .text-accent { color: var(--accent-turquoise); }
+        .text-center { text-align: center; }
+        .mb-20 { margin-bottom: 20px; }
+        .mb-40 { margin-bottom: 40px; }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <i class="fas fa-water"></i>
+                ЧИСТАЯ АУРА
+            </a>
+            <ul class="nav-links">
+                <li><a href="#market">Рынок</a></li>
+                <li><a href="#economics">Экономика</a></li>
+                <li><a href="#locations">Объекты</a></li>
+                <li><a href="#support">Поддержка</a></li>
+            </ul>
+            <a href="tel:+79836020102" class="nav-phone">+7 (983) 602-01-02</a>
+            <button class="mobile-menu-btn" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-grid"></div>
+        <div class="hero-content">
+            <div class="hero-badge">Федеральная сеть робомоек</div>
+            <h1>Инвестируйте в <span>роботизированные автомойки</span></h1>
+            <p class="hero-subtitle">Готовый бизнес с окупаемостью 12-18 месяцев. 280+ работающих объектов. Полная автоматизация без персонала.</p>
+            
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number number-font" data-target="12">0</span>
+                    <span class="stat-label">мес окупаемость</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number number-font" data-target="80">0</span>
+                    <span class="stat-label">% доходность</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number number-font" data-target="6.5">0</span>
+                    <span class="stat-label">млн ₽ вход</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number number-font" data-target="280">0</span>
+                    <span class="stat-label">+ объектов</span>
+                </div>
+            </div>
+
+            <div class="hero-cta">
+                <a href="#contact" class="btn-primary">
+                    Получить инвестиционное предложение
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <div class="hero-note">
+                    <i class="fas fa-file-pdf"></i>
+                    PDF с финансовой моделью и планом запуска
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator" onclick="document.getElementById('market').scrollIntoView({behavior: 'smooth'})">
+            <span>Узнать больше</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Market Section -->
+    <section class="market" id="market">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">Рынок</span>
+                <h2 class="section-title">Рынок робомоек растет на 23-30% в год</h2>
+                <p class="section-subtitle">Автоматизация сервисов — приоритетное направление 2025. Классические мойки устаревают, роботизация замещает ручной труд.</p>
+            </div>
+
+            <div class="market-grid">
+                <div class="market-card animate-on-scroll">
+                    <div class="market-number number-font">18.2</div>
+                    <div class="market-label">млрд ₽</div>
+                    <div class="market-desc">Потенциальная емкость рынка робомоек в России</div>
+                </div>
+                <div class="market-card animate-on-scroll">
+                    <div class="market-number number-font">6</div>
+                    <div class="market-label">млрд ₽</div>
+                    <div class="market-desc">Текущий объем — заполнено только 33%</div>
+                </div>
+                <div class="market-card animate-on-scroll">
+                    <div class="market-number number-font">3×</div>
+                    <div class="market-label">рост потенциала</div>
+                    <div class="market-desc">Возможность масштабирования в ближайшие 5 лет</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison Section -->
+    <section class="comparison" id="comparison">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">Почему мы</span>
+                <h2 class="section-title">Почему классические мойки умирают</h2>
+            </div>
+
+            <div class="comparison-grid">
+                <div class="comparison-card animate-on-scroll">
+                    <h3 class="comparison-title">Ручные мойки</h3>
+                    <ul class="comparison-list">
+                        <li>Зависимость от персонала</li>
+                        <li>Текучка кадров до 40% в год</li>
+                        <li>Непредсказуемое качество</li>
+                        <li>Ограниченное время работы</li>
+                    </ul>
+                    <div class="comparison-metric">↓ 35%</div>
+                    <div style="font-size: 14px; color: var(--text-gray);">Средняя рентабельность</div>
+                </div>
+
+                <div class="comparison-card animate-on-scroll">
+                    <h3 class="comparison-title">Классические порталы</h3>
+                    <ul class="comparison-list">
+                        <li>Вход от 14 млн ₽</li>
+                        <li>Запуск 3-6 месяцев</li>
+                        <li>Требуется оператор</li>
+                        <li>Низкая эффективность</li>
+                    </ul>
+                    <div class="comparison-metric">↓ 50%</div>
+                    <div style="font-size: 14px; color: var(--text-gray);">Средняя доходность</div>
+                </div>
+
+                <div class="comparison-card featured animate-on-scroll">
+                    <h3 class="comparison-title">Чистая Аура</h3>
+                    <ul class="comparison-list">
+                        <li>Полная автоматизация 24/7</li>
+                        <li>Запуск от 30 дней</li>
+                        <li>Без персонала на точке</li>
+                        <li>Премиальное качество</li>
+                    </ul>
+                    <div class="comparison-metric">↑ 80%</div>
+                    <div style="font-size: 14px; color: var(--text-gray);">Максимальная доходность</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Economics Section -->
+    <section class="economics" id="economics">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">Финансовая модель</span>
+                <h2 class="section-title">Проверенная экономика на 280+ объектах</h2>
+            </div>
+
+            <div class="economics-grid">
+                <div class="investment-block animate-on-scroll">
+                    <h3 class="investment-title">Инвестиции на старт</h3>
+                    <div class="investment-item">
+                        <span>Робот-шаттл с 18 форсунками</span>
+                        <span class="number-font">3 200 000 ₽</span>
+                    </div>
+                    <div class="investment-item">
+                        <span>Оборудование и комплектация</span>
+                        <span class="number-font">1 800 000 ₽</span>
+                    </div>
+                    <div class="investment-item">
+                        <span>Ремонт и отделка помещения</span>
+                        <span class="number-font">800 000 ₽</span>
+                    </div>
+                    <div class="investment-item">
+                        <span>Наружная реклама и вывески</span>
+                        <span class="number-font">350 000 ₽</span>
+                    </div>
+                    <div class="investment-item">
+                        <span>Стартовый запас химии</span>
+                        <span class="number-font">200 000 ₽</span>
+                    </div>
+                    <div class="investment-item">
+                        <span>Паушальный взнос франшизы</span>
+                        <span class="number-font">150 000 ₽</span>
+                    </div>
+                    <div class="investment-item total">
+                        <span>ИТОГО</span>
+                        <span class="number-font">6 500 000 ₽</span>
+                    </div>
+                </div>
+
+                <div class="animate-on-scroll">
+                    <h3 class="investment-title">Себестоимость программ</h3>
+                    <div class="table-container">
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>Программа</th>
+                                    <th>Цена</th>
+                                    <th>Себест.</th>
+                                    <th>Маржа</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Экспресс (без сушки)</td>
+                                    <td>300 ₽</td>
+                                    <td>50 ₽</td>
+                                    <td class="highlight">83%</td>
+                                </tr>
+                                <tr>
+                                    <td>Оптимальная</td>
+                                    <td>450 ₽</td>
+                                    <td>92 ₽</td>
+                                    <td class="highlight">80%</td>
+                                </tr>
+                                <tr>
+                                    <td>Стандартная (с воском)</td>
+                                    <td>600 ₽</td>
+                                    <td>120 ₽</td>
+                                    <td class="highlight">80%</td>
+                                </tr>
+                                <tr>
+                                    <td>Премиум (полный цикл)</td>
+                                    <td>750 ₽</td>
+                                    <td>134 ₽</td>
+                                    <td class="highlight">82%</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div style="margin-top: 20px; padding: 20px; background: rgba(100, 255, 218, 0.1); border-radius: 8px;">
+                        <div style="display: flex; justify-content: space-between; margin-bottom: 10px;">
+                            <span>Средний чек:</span>
+                            <span class="number-font" style="color: var(--accent-turquoise); font-weight: 700;">480 ₽</span>
+                        </div>
+                        <div style="display: flex; justify-content: space-between;">
+                            <span>Средняя маржинальность:</span>
+                            <span class="number-font" style="color: var(--accent-turquoise); font-weight: 700;">81%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="scenarios">
+                <div class="scenario-card animate-on-scroll">
+                    <div class="scenario-title">Консервативный</div>
+                    <div class="scenario-metric">
+                        <div class="scenario-label">Загрузка</div>
+                        <div class="scenario-value">60 авто/день</div>
+                    </div>
+                    <div class="scenario-metric">
+                        <div class="scenario-label">Выручка/мес</div>
+                        <div class="scenario-value">864 000 ₽</div>
+                    </div>
+                    <div class="scenario-metric">
+                        <div class="scenario-label">Чистая прибыль</div>
+                        <div class="scenario-value" style="color: var(--accent-turquoise);">420 000 ₽</div>
+                    </div>
+                    <div class="scenario-metric">
+                        <div class="scenario-label">Окупаемость</div>
+                        <div class="scenario-value">15-18 мес</div>
+                    </div>
+                </div>
+
+                <div class="scenario-card middle animate-on-scroll">
+                    <div class="scenario-title">Базовый</div>
+                    <div class="scenario-metric">
+                        <div class="scenario-label">Загрузка</div>
+                        <div class="scenario-value">90 авто/день</div>
+                    </div>
+                    <div class="scenario-metric">
+                        <div class="scenario-label">Выручка/мес</div>
+                        <div class="scenario-value">1 296 000 ₽</div>
+                    </div>
+                    <div class="scenario-metric">
+                        <div class="scenario-label">Чистая прибыль</div>
+                        <div class="scenario-value" style="color: var(--accent-turquoise);">750 000 ₽</div>
+                    </div>
+                    <div class="scenario-metric">
+                        <div class="scenario-label">Окупаемость</div>
+                        <div class="scenario-value">12-14 мес</div>
+                    </div>
+                </div>
+
+                <div class="scenario-card animate-on-scroll">
+                    <div class="scenario-title">Оптимистичный</div>
+                    <div class="scenario-metric">
+                        <div class="scenario-label">Загрузка</div>
+                        <div class="scenario-value">120 авто/день</div>
+                    </div>
+                    <div class="scenario-metric">
+                        <div class="scenario-label">Выручка/мес</div>
+                        <div class="scenario-value">1 728 000 ₽</div>
+                    </div>
+                    <div class="scenario-metric">
+                        <div class="scenario-label">Чистая прибыль</div>
+                        <div class="scenario-value" style="color: var(--accent-turquoise);">1 100 000 ₽</div>
+                    </div>
+                    <div class="scenario-metric">
+                        <div class="scenario-label">Окупаемость</div>
+                        <div class="scenario-value">10-12 мес</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="economics-summary">
+                <div class="summary-item animate-on-scroll">
+                    <span class="summary-number number-font">49%</span>
+                    <div class="summary-label">ROI годовых</div>
+                </div>
+                <div class="summary-item animate-on-scroll">
+                    <span class="summary-number number-font">2-3</span>
+                    <div class="summary-label">мес до точки безубыточности</div>
+                </div>
+                <div class="summary-item animate-on-scroll">
+                    <span class="summary-number number-font">5.4</span>
+                    <div class="summary-label">млн ₽ чистой прибыли/год</div>
+                </div>
+                <div class="summary-item animate-on-scroll">
+                    <span class="summary-number number-font">×2</span>
+                    <div class="summary-label">ниже порог входа vs порталы</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Locations Section -->
+    <section class="locations" id="locations">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag" style="color: var(--deep-blue); opacity: 0.6;">Локации</span>
+                <h2 class="section-title">Работающие объекты и готовые локации</h2>
+                <p class="section-subtitle">Не нужно искать площадку — мы уже сделали это. Проверенные точки с высоким трафиком.</p>
+            </div>
+
+            <div class="locations-stats">
+                <div class="location-stat animate-on-scroll">
+                    <div class="location-stat-number number-font">280+</div>
+                    <div class="location-stat-label">работающих объектов</div>
+                </div>
+                <div class="location-stat animate-on-scroll">
+                    <div class="location-stat-number number-font">6</div>
+                    <div class="location-stat-label">горячих локаций</div>
+                </div>
+                <div class="location-stat animate-on-scroll">
+                    <div class="location-stat-number number-font">800+</div>
+                    <div class="location-stat-label">авто/час макс. трафик</div>
+                </div>
+                <div class="location-stat animate-on-scroll">
+                    <div class="location-stat-number number-font">30</div>
+                    <div class="location-stat-label">дней до запуска</div>
+                </div>
+            </div>
+
+            <div class="locations-list">
+                <div class="location-item animate-on-scroll">
+                    <div class="location-info">
+                        <h3>Звенигородская эстакада</h3>
+                        <div class="location-meta">
+                            <span><i class="fas fa-car"></i> 800+ авто/час</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Рекомендуем 4-5 постов</span>
+                        </div>
+                    </div>
+                    <span class="location-badge">Готова к запуску</span>
+                </div>
+
+                <div class="location-item animate-on-scroll">
+                    <div class="location-info">
+                        <h3>Марьина Роща</h3>
+                        <div class="location-meta">
+                            <span><i class="fas fa-car"></i> 400-1000 авто/час</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Рекомендуем 4-6 постов</span>
+                        </div>
+                    </div>
+                    <span class="location-badge">Готова к запуску</span>
+                </div>
+
+                <div class="location-item animate-on-scroll">
+                    <div class="location-info">
+                        <h3>Красногорск, Вокзальная</h3>
+                        <div class="location-meta">
+                            <span><i class="fas fa-car"></i> 400-600 авто/час</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Рекомендуем 2-4 поста</span>
+                        </div>
+                    </div>
+                    <span class="location-badge">Готова к запуску</span>
+                </div>
+
+                <div class="location-item animate-on-scroll">
+                    <div class="location-info">
+                        <h3>Керамический проезд</h3>
+                        <div class="location-meta">
+                            <span><i class="fas fa-car"></i> 400-600 авто/час</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Рекомендуем 2-3 поста</span>
+                        </div>
+                    </div>
+                    <span class="location-badge">Готова к запуску</span>
+                </div>
+
+                <div class="location-item animate-on-scroll">
+                    <div class="location-info">
+                        <h3>Новопетровский проезд</h3>
+                        <div class="location-meta">
+                            <span><i class="fas fa-car"></i> 300-500 авто/час</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Рекомендуем 3-4 поста</span>
+                        </div>
+                    </div>
+                    <span class="location-badge">Готова к запуску</span>
+                </div>
+
+                <div class="location-item animate-on-scroll">
+                    <div class="location-info">
+                        <h3>Ул. Зорге</h3>
+                        <div class="location-meta">
+                            <span><i class="fas fa-car"></i> 400-600 авто/час</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Рекомендуем 4 поста</span>
+                        </div>
+                    </div>
+                    <span class="location-badge">Готова к запуску</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Risks Section -->
+    <section class="risks" id="risks">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">Безопасность</span>
+                <h2 class="section-title">Управление рисками</h2>
+                <p class="section-subtitle">Как защищаем капитал партнеров. Прозрачность на каждом этапе.</p>
+            </div>
+
+            <div class="risks-grid">
+                <div class="risk-card animate-on-scroll">
+                    <div class="risk-header">
+                        <div class="risk-icon">
+                            <i class="fas fa-snowflake"></i>
+                        </div>
+                        <h3 class="risk-title">Сезонность</h3>
+                    </div>
+                    <div class="risk-solution">
+                        <div class="risk-solution-label">Решение</div>
+                        <p>Роботы работают круглый год. Зимний пик +30% к загрузке (грязь, соль). Летняя программа «Экспресс» поддерживает трафик. Диверсификация по сезонным тарифам.</p>
+                    </div>
+                </div>
+
+                <div class="risk-card animate-on-scroll">
+                    <div class="risk-header">
+                        <div class="risk-icon">
+                            <i class="fas fa-map-marked-alt"></i>
+                        </div>
+                        <h3 class="risk-title">Локация</h3>
+                    </div>
+                    <div class="risk-solution">
+                        <div class="risk-solution-label">Решение</div>
+                        <p>Предоставляем только верифицированные точки. Анализ трафика 24/7 перед запуском. Юридическая чистота аренды. 280+ успешных кейсов локаций.</p>
+                    </div>
+                </div>
+
+                <div class="risk-card animate-on-scroll">
+                    <div class="risk-header">
+                        <div class="risk-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3 class="risk-title">Загрузка</h3>
+                    </div>
+                    <div class="risk-solution">
+                        <div class="risk-solution-label">Решение</div>
+                        <p>Точка безубыточности — 20-25 авто/день (15% от мощности). Средняя загрузка действующих объектов — 60-90 авто. Маркетинговая поддержка на старте.</p>
+                    </div>
+                </div>
+
+                <div class="risk-card animate-on-scroll">
+                    <div class="risk-header">
+                        <div class="risk-icon">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <h3 class="risk-title">Технология</h3>
+                    </div>
+                    <div class="risk-solution">
+                        <div class="risk-solution-label">Решение</div>
+                        <p>Оборудование Siemens, Pepperl+Fuchs — мировые бренды. Гарантия 2 года. Сервис 24/7. Запасные части на складе. Проверенные поставщики, SLA.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Support Section -->
+    <section class="support" id="support">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">Сопровождение</span>
+                <h2 class="section-title">Полный цикл поддержки</h2>
+                <p class="section-subtitle">От участка до прибыли — берем на себя всё. Вы получаете готовый бизнес.</p>
+            </div>
+
+            <div class="support-grid">
+                <div class="support-card animate-on-scroll">
+                    <div class="support-icon">
+                        <i class="fas fa-search-location"></i>
+                    </div>
+                    <h3 class="support-title">Локация</h3>
+                    <p class="support-desc">Анализ трафика, конкурентов, инженерных условий. Переговоры с арендодателем.</p>
+                </div>
+
+                <div class="support-card animate-on-scroll">
+                    <div class="support-icon">
+                        <i class="fas fa-drafting-compass"></i>
+                    </div>
+                    <h3 class="support-title">Проектирование</h3>
+                    <p class="support-desc">Дизайн-проект, техническое задание. Согласования с надзорными органами.</p>
+                </div>
+
+                <div class="support-card animate-on-scroll">
+                    <div class="support-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3 class="support-title">Монтаж</h3>
+                    <p class="support-desc">Поставка, установка, пусконаладка. Проверка по чек-листу.</p>
+                </div>
+
+                <div class="support-card animate-on-scroll">
+                    <div class="support-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3 class="support-title">Обучение</h3>
+                    <p class="support-desc">Онлайн-школа, 50+ уроков. Стажировка на действующих точках.</p>
+                </div>
+
+                <div class="support-card animate-on-scroll">
+                    <div class="support-icon">
+                        <i class="fas fa-bullhorn"></i>
+                    </div>
+                    <h3 class="support-title">Маркетинг</h3>
+                    <p class="support-desc">ГЕОсервисы, таргет, контекст. База креативов, SMM.</p>
+                </div>
+
+                <div class="support-card animate-on-scroll">
+                    <div class="support-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3 class="support-title">Поддержка 24/7</h3>
+                    <p class="support-desc">Персональный менеджер. Техническая поддержка. «Тайный покупатель».</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta" id="contact">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="animate-on-scroll">Получить инвестиционное предложение</h2>
+                <p class="cta-subtitle animate-on-scroll">PDF с финансовой моделью, сравнением форматов и примерами работающих объектов</p>
+                
+                <div class="form-container animate-on-scroll">
+                    <form id="investorForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Ваше имя</label>
+                                <input type="text" id="name" name="name" required placeholder="Иван Иванов">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Телефон</label>
+                                <input type="tel" id="phone" name="phone" required placeholder="+7 (___) ___-__-__">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required placeholder="example@mail.ru">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="format">Интересует формат</label>
+                            <select id="format" name="format" required>
+                                <option value="">Выберите вариант</option>
+                                <option value="single">Один пост (6.5 млн ₽)</option>
+                                <option value="double">Два поста (13 млн ₽)</option>
+                                <option value="network">Сеть 3+ постов (от 19.5 млн ₽)</option>
+                                <option value="consult">Нужна консультация</option>
+                            </select>
+                        </div>
+                        
+                        <button type="submit" class="btn-submit">
+                            Получить предложение
+                            <i class="fas fa-paper-plane" style="margin-left: 8px;"></i>
+                        </button>
+                    </form>
+                </div>
+
+                <div class="contacts">
+                    <a href="tel:+79836020102" class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+7 (983) 602-01-02</span>
+                    </a>
+                    <a href="mailto:partners@chistaya-aura.ru" class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>partners@chistaya-aura.ru</span>
+                    </a>
+                    <a href="#" class="contact-item">
+                        <i class="fab fa-telegram"></i>
+                        <span>Telegram</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 Чистая Аура. Инвестиции в чистое будущее.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Animate numbers on scroll
+        function animateNumbers() {
+            const numbers = document.querySelectorAll('.stat-number[data-target]');
+            
+            numbers.forEach(num => {
+                const target = parseFloat(num.getAttribute('data-target'));
+                const isFloat = target % 1 !== 0;
+                const duration = 2000;
+                const step = target / (duration / 16);
+                let current = 0;
+                
+                const updateNumber = () => {
+                    current += step;
+                    if (current < target) {
+                        num.textContent = isFloat ? current.toFixed(1) : Math.floor(current);
+                        requestAnimationFrame(updateNumber);
+                    } else {
+                        num.textContent = isFloat ? target.toFixed(1) : target;
+                        if (num.getAttribute('data-target') === '280') {
+                            num.textContent = target + '+';
+                        } else if (num.getAttribute('data-target') === '80') {
+                            num.textContent = 'до ' + target + '%';
+                        } else if (num.getAttribute('data-target') === '12') {
+                            num.textContent = target + '-18';
+                        } else if (num.getAttribute('data-target') === '6.5') {
+                            num.textContent = 'от ' + target;
+                        }
+                    }
+                };
+                
+                // Start animation when element is visible
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            updateNumber();
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                }, { threshold: 0.5 });
+                
+                observer.observe(num);
+            });
+        }
+
+        // Scroll animations
+        function initScrollAnimations() {
+            const elements = document.querySelectorAll('.animate-on-scroll');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, { 
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            });
+            
+            elements.forEach(el => observer.observe(el));
+        }
+
+        // Smooth scroll for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Form handling
+        document.getElementById('investorForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Collect form data
+            const formData = {
+                name: document.getElementById('name').value,
+                phone: document.getElementById('phone').value,
+                email: document.getElementById('email').value,
+                format: document.getElementById('format').value
+            };
+            
+            // Here you would normally send data to server
+            console.log('Form submitted:', formData);
+            
+            // Show success message
+            alert('Спасибо! Мы отправили инвестиционное предложение на ваш email в течение 15 минут.');
+            
+            // Reset form
+            this.reset();
+        });
+
+        // Phone mask
+        const phoneInput = document.getElementById('phone');
+        phoneInput.addEventListener('input', function(e) {
+            let value = e.target.value.replace(/\D/g, '');
+            if (value.length > 0) {
+                if (value[0] === '7' || value[0] === '8') {
+                    value = value.substring(1);
+                }
+                let formattedValue = '+7';
+                if (value.length > 0) formattedValue += ' (' + value.substring(0, 3);
+                if (value.length >= 3) formattedValue += ') ' + value.substring(3, 6);
+                if (value.length >= 6) formattedValue += '-' + value.substring(6, 8);
+                if (value.length >= 8) formattedValue += '-' + value.substring(8, 10);
+                e.target.value = formattedValue;
+            }
+        });
+
+        // Mobile menu toggle
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
+        }
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', function() {
+            animateNumbers();
+            initScrollAnimations();
+        });
+
+        // Navigation background on scroll
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('.nav');
+            if (window.scrollY > 100) {
+                nav.style.background = 'rgba(10, 25, 47, 0.98)';
+                nav.style.boxShadow = '0 2px 20px rgba(0,0,0,0.3)';
+            } else {
+                nav.style.background = 'rgba(10, 25, 47, 0.95)';
+                nav.style.boxShadow = 'none';
+            }
+        });
+    </script>
+</body>
+</html>

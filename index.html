@@ -23,6 +23,7 @@
             --light-gray: #F8F9FA;
             --text-gray: #8892B0;
             --gold: #FFD700;
+            --logo-blue: #00BCD4;
             --gradient-dark: linear-gradient(135deg, #0A192F 0%, #112240 100%);
         }
 
@@ -59,7 +60,7 @@
             position: fixed;
             top: 0;
             width: 100%;
-            padding: 20px 0;
+            padding: 15px 0;
             background: rgba(10, 25, 47, 0.95);
             backdrop-filter: blur(10px);
             z-index: 1000;
@@ -77,14 +78,33 @@
         }
 
         .logo {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 24px;
-            font-weight: 800;
-            color: var(--accent-turquoise);
-            text-decoration: none;
             display: flex;
             align-items: center;
-            gap: 10px;
+            text-decoration: none;
+            gap: 12px;
+        }
+
+        .logo-img {
+            height: 45px;
+            width: auto;
+            filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
+        }
+
+        .logo-text {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--white);
+            line-height: 1.2;
+        }
+
+        .logo-text span {
+            display: block;
+            font-size: 12px;
+            font-weight: 500;
+            color: var(--accent-turquoise);
+            letter-spacing: 2px;
+            text-transform: uppercase;
         }
 
         .nav-links {
@@ -125,11 +145,14 @@
             color: var(--accent-turquoise);
             text-decoration: none;
             font-weight: 600;
-            font-size: 16px;
+            font-size: 14px;
             border: 1px solid var(--accent-turquoise);
             padding: 10px 20px;
             border-radius: 4px;
             transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 8px;
         }
 
         .nav-phone:hover {
@@ -153,6 +176,7 @@
             position: relative;
             background: var(--gradient-dark);
             overflow: hidden;
+            padding-top: 80px;
         }
 
         .hero::before {
@@ -163,8 +187,8 @@
             right: 0;
             bottom: 0;
             background: 
-                radial-gradient(circle at 20% 50%, rgba(100, 255, 218, 0.05) 0%, transparent 50%),
-                radial-gradient(circle at 80% 80%, rgba(100, 255, 218, 0.03) 0%, transparent 50%);
+                radial-gradient(circle at 20% 50%, rgba(0, 188, 212, 0.08) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(100, 255, 218, 0.05) 0%, transparent 50%);
             pointer-events: none;
         }
 
@@ -175,8 +199,8 @@
             right: 0;
             bottom: 0;
             background-image: 
-                linear-gradient(rgba(100, 255, 218, 0.03) 1px, transparent 1px),
-                linear-gradient(90deg, rgba(100, 255, 218, 0.03) 1px, transparent 1px);
+                linear-gradient(rgba(0, 188, 212, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(0, 188, 212, 0.03) 1px, transparent 1px);
             background-size: 50px 50px;
             opacity: 0.5;
         }
@@ -184,18 +208,20 @@
         .hero-content {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 120px 20px 80px;
+            padding: 60px 20px 80px;
             position: relative;
             z-index: 2;
         }
 
         .hero-badge {
-            display: inline-block;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
             padding: 8px 16px;
-            background: rgba(100, 255, 218, 0.1);
-            border: 1px solid var(--accent-turquoise);
+            background: rgba(0, 188, 212, 0.15);
+            border: 1px solid var(--logo-blue);
             border-radius: 20px;
-            color: var(--accent-turquoise);
+            color: var(--logo-blue);
             font-size: 12px;
             font-weight: 600;
             text-transform: uppercase;
@@ -207,18 +233,18 @@
         .hero h1 {
             font-size: clamp(36px, 5vw, 64px);
             margin-bottom: 24px;
-            max-width: 800px;
+            max-width: 900px;
             animation: fadeInUp 0.8s ease 0.2s both;
         }
 
         .hero h1 span {
-            color: var(--accent-turquoise);
+            color: var(--logo-blue);
         }
 
         .hero-subtitle {
             font-size: 20px;
             color: var(--text-gray);
-            max-width: 600px;
+            max-width: 700px;
             margin-bottom: 40px;
             animation: fadeInUp 0.8s ease 0.4s both;
         }
@@ -233,20 +259,24 @@
 
         .stat-item {
             text-align: left;
+            padding: 20px;
+            background: rgba(0, 188, 212, 0.05);
+            border-radius: 8px;
+            border-left: 3px solid var(--logo-blue);
         }
 
         .stat-number {
             font-family: 'Space Grotesk', sans-serif;
-            font-size: 48px;
+            font-size: 42px;
             font-weight: 700;
-            color: var(--accent-turquoise);
+            color: var(--logo-blue);
             display: block;
             line-height: 1;
             margin-bottom: 8px;
         }
 
         .stat-label {
-            font-size: 14px;
+            font-size: 13px;
             color: var(--text-gray);
             text-transform: uppercase;
             letter-spacing: 0.5px;
@@ -264,8 +294,8 @@
             align-items: center;
             gap: 10px;
             padding: 18px 40px;
-            background: var(--accent-turquoise);
-            color: var(--deep-blue);
+            background: linear-gradient(135deg, var(--logo-blue) 0%, #00ACC1 100%);
+            color: var(--white);
             text-decoration: none;
             font-family: 'Montserrat', sans-serif;
             font-weight: 700;
@@ -275,11 +305,12 @@
             border: none;
             cursor: pointer;
             width: fit-content;
+            box-shadow: 0 4px 15px rgba(0, 188, 212, 0.3);
         }
 
         .btn-primary:hover {
             transform: translateY(-2px);
-            box-shadow: 0 10px 30px rgba(100, 255, 218, 0.3);
+            box-shadow: 0 10px 30px rgba(0, 188, 212, 0.4);
         }
 
         .hero-note {
@@ -299,7 +330,7 @@
             flex-direction: column;
             align-items: center;
             gap: 10px;
-            color: var(--accent-turquoise);
+            color: var(--logo-blue);
             font-size: 12px;
             animation: bounce 2s infinite;
             cursor: pointer;
@@ -328,7 +359,7 @@
         }
 
         .section-tag {
-            color: var(--accent-turquoise);
+            color: var(--logo-blue);
             font-size: 12px;
             font-weight: 600;
             text-transform: uppercase;
@@ -369,7 +400,7 @@
             padding: 40px;
             background: var(--light-gray);
             border-radius: 8px;
-            border-left: 4px solid var(--accent-turquoise);
+            border-left: 4px solid var(--logo-blue);
             transition: transform 0.3s;
         }
 
@@ -411,16 +442,17 @@
         .comparison-card {
             padding: 40px;
             background: rgba(255, 255, 255, 0.02);
-            border: 1px solid rgba(100, 255, 218, 0.1);
+            border: 1px solid rgba(0, 188, 212, 0.1);
             border-radius: 8px;
             position: relative;
             overflow: hidden;
         }
 
         .comparison-card.featured {
-            background: rgba(100, 255, 218, 0.05);
-            border-color: var(--accent-turquoise);
+            background: rgba(0, 188, 212, 0.08);
+            border-color: var(--logo-blue);
             transform: scale(1.05);
+            box-shadow: 0 10px 40px rgba(0, 188, 212, 0.15);
         }
 
         .comparison-card.featured::before {
@@ -428,8 +460,8 @@
             position: absolute;
             top: 0;
             right: 0;
-            background: var(--accent-turquoise);
-            color: var(--deep-blue);
+            background: var(--logo-blue);
+            color: var(--white);
             padding: 5px 15px;
             font-size: 10px;
             font-weight: 700;
@@ -443,7 +475,7 @@
         }
 
         .comparison-card.featured .comparison-title {
-            color: var(--accent-turquoise);
+            color: var(--logo-blue);
         }
 
         .comparison-list {
@@ -463,7 +495,7 @@
 
         .comparison-list li::before {
             content: '•';
-            color: var(--accent-turquoise);
+            color: var(--logo-blue);
             font-weight: bold;
         }
 
@@ -474,7 +506,7 @@
         }
 
         .comparison-card.featured .comparison-metric {
-            color: var(--accent-turquoise);
+            color: var(--logo-blue);
         }
 
         .comparison-card:not(.featured) .comparison-metric {
@@ -497,13 +529,13 @@
             background: rgba(10, 25, 47, 0.5);
             padding: 40px;
             border-radius: 8px;
-            border: 1px solid rgba(100, 255, 218, 0.2);
+            border: 1px solid rgba(0, 188, 212, 0.2);
         }
 
         .investment-title {
             font-size: 24px;
             margin-bottom: 30px;
-            color: var(--accent-turquoise);
+            color: var(--logo-blue);
         }
 
         .investment-item {
@@ -515,13 +547,13 @@
         }
 
         .investment-item.total {
-            border-top: 2px solid var(--accent-turquoise);
+            border-top: 2px solid var(--logo-blue);
             border-bottom: none;
             margin-top: 20px;
             padding-top: 20px;
             font-weight: 700;
             font-size: 24px;
-            color: var(--accent-turquoise);
+            color: var(--logo-blue);
         }
 
         .table-container {
@@ -542,7 +574,7 @@
         }
 
         .data-table th {
-            color: var(--accent-turquoise);
+            color: var(--logo-blue);
             font-weight: 600;
             font-size: 12px;
             text-transform: uppercase;
@@ -554,7 +586,7 @@
         }
 
         .data-table .highlight {
-            color: var(--accent-turquoise);
+            color: var(--logo-blue);
             font-weight: 700;
         }
 
@@ -569,7 +601,7 @@
             background: rgba(10, 25, 47, 0.5);
             padding: 30px;
             border-radius: 8px;
-            border-top: 4px solid var(--accent-turquoise);
+            border-top: 4px solid var(--logo-blue);
             transition: transform 0.3s;
         }
 
@@ -578,14 +610,14 @@
         }
 
         .scenario-card.middle {
-            background: rgba(100, 255, 218, 0.1);
+            background: rgba(0, 188, 212, 0.1);
             border-top-width: 6px;
         }
 
         .scenario-title {
             font-size: 18px;
             margin-bottom: 20px;
-            color: var(--accent-turquoise);
+            color: var(--logo-blue);
         }
 
         .scenario-metric {
@@ -613,7 +645,7 @@
             gap: 30px;
             margin-top: 60px;
             padding-top: 60px;
-            border-top: 1px solid rgba(100, 255, 218, 0.2);
+            border-top: 1px solid rgba(0, 188, 212, 0.2);
         }
 
         .summary-item {
@@ -624,7 +656,7 @@
             font-family: 'Space Grotesk', sans-serif;
             font-size: 48px;
             font-weight: 700;
-            color: var(--accent-turquoise);
+            color: var(--logo-blue);
             display: block;
         }
 
@@ -682,7 +714,7 @@
             padding: 30px;
             background: var(--light-gray);
             border-radius: 8px;
-            border-left: 4px solid var(--accent-turquoise);
+            border-left: 4px solid var(--logo-blue);
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -707,8 +739,8 @@
         }
 
         .location-badge {
-            background: var(--accent-turquoise);
-            color: var(--deep-blue);
+            background: var(--logo-blue);
+            color: var(--white);
             padding: 5px 15px;
             border-radius: 20px;
             font-size: 12px;
@@ -729,7 +761,7 @@
         .risk-card {
             padding: 40px;
             background: rgba(255, 255, 255, 0.02);
-            border: 1px solid rgba(100, 255, 218, 0.1);
+            border: 1px solid rgba(0, 188, 212, 0.1);
             border-radius: 8px;
             position: relative;
         }
@@ -759,15 +791,15 @@
         }
 
         .risk-solution {
-            background: rgba(100, 255, 218, 0.05);
+            background: rgba(0, 188, 212, 0.05);
             padding: 20px;
             border-radius: 8px;
-            border-left: 3px solid var(--accent-turquoise);
+            border-left: 3px solid var(--logo-blue);
         }
 
         .risk-solution-label {
             font-size: 12px;
-            color: var(--accent-turquoise);
+            color: var(--logo-blue);
             text-transform: uppercase;
             letter-spacing: 1px;
             margin-bottom: 10px;
@@ -801,20 +833,20 @@
         }
 
         .support-card:hover {
-            border-color: var(--accent-turquoise);
+            border-color: var(--logo-blue);
             transform: translateY(-5px);
         }
 
         .support-icon {
             width: 80px;
             height: 80px;
-            background: rgba(100, 255, 218, 0.1);
+            background: rgba(0, 188, 212, 0.1);
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
             margin: 0 auto 20px;
-            color: var(--accent-turquoise);
+            color: var(--logo-blue);
             font-size: 32px;
         }
 
@@ -843,7 +875,7 @@
             left: -50%;
             width: 200%;
             height: 200%;
-            background: radial-gradient(circle, rgba(100, 255, 218, 0.05) 0%, transparent 70%);
+            background: radial-gradient(circle, rgba(0, 188, 212, 0.08) 0%, transparent 70%);
             animation: rotate 20s linear infinite;
         }
 
@@ -875,7 +907,7 @@
             background: rgba(255, 255, 255, 0.05);
             padding: 50px;
             border-radius: 8px;
-            border: 1px solid rgba(100, 255, 218, 0.2);
+            border: 1px solid rgba(0, 188, 212, 0.2);
             backdrop-filter: blur(10px);
         }
 
@@ -888,7 +920,7 @@
             display: block;
             margin-bottom: 8px;
             font-size: 14px;
-            color: var(--accent-turquoise);
+            color: var(--logo-blue);
             font-weight: 500;
         }
 
@@ -897,7 +929,7 @@
             width: 100%;
             padding: 15px;
             background: rgba(255, 255, 255, 0.05);
-            border: 1px solid rgba(100, 255, 218, 0.2);
+            border: 1px solid rgba(0, 188, 212, 0.2);
             border-radius: 4px;
             color: var(--white);
             font-size: 16px;
@@ -907,8 +939,8 @@
         .form-group input:focus,
         .form-group select:focus {
             outline: none;
-            border-color: var(--accent-turquoise);
-            background: rgba(100, 255, 218, 0.05);
+            border-color: var(--logo-blue);
+            background: rgba(0, 188, 212, 0.05);
         }
 
         .form-row {
@@ -920,8 +952,8 @@
         .btn-submit {
             width: 100%;
             padding: 18px;
-            background: var(--accent-turquoise);
-            color: var(--deep-blue);
+            background: linear-gradient(135deg, var(--logo-blue) 0%, #00ACC1 100%);
+            color: var(--white);
             border: none;
             border-radius: 4px;
             font-family: 'Montserrat', sans-serif;
@@ -930,11 +962,40 @@
             cursor: pointer;
             transition: all 0.3s;
             margin-top: 10px;
+            box-shadow: 0 4px 15px rgba(0, 188, 212, 0.3);
         }
 
         .btn-submit:hover {
             transform: translateY(-2px);
-            box-shadow: 0 10px 30px rgba(100, 255, 218, 0.3);
+            box-shadow: 0 10px 30px rgba(0, 188, 212, 0.4);
+        }
+
+        .btn-submit:disabled {
+            opacity: 0.7;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .form-status {
+            margin-top: 15px;
+            padding: 15px;
+            border-radius: 4px;
+            display: none;
+            font-size: 14px;
+        }
+
+        .form-status.success {
+            background: rgba(0, 188, 212, 0.1);
+            border: 1px solid var(--logo-blue);
+            color: var(--logo-blue);
+            display: block;
+        }
+
+        .form-status.error {
+            background: rgba(255, 107, 107, 0.1);
+            border: 1px solid #ff6b6b;
+            color: #ff6b6b;
+            display: block;
         }
 
         .contacts {
@@ -955,17 +1016,23 @@
         }
 
         .contact-item:hover {
-            color: var(--accent-turquoise);
+            color: var(--logo-blue);
         }
 
         /* Footer */
         .footer {
             background: var(--deep-blue);
             padding: 40px 0;
-            border-top: 1px solid rgba(100, 255, 218, 0.1);
+            border-top: 1px solid rgba(0, 188, 212, 0.1);
             text-align: center;
             color: var(--text-gray);
             font-size: 14px;
+        }
+
+        .footer-logo {
+            height: 40px;
+            margin-bottom: 20px;
+            opacity: 0.8;
         }
 
         /* Animations */
@@ -991,18 +1058,58 @@
             transform: translateY(0);
         }
 
+        /* Loading spinner */
+        .spinner {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 3px solid rgba(255,255,255,.3);
+            border-radius: 50%;
+            border-top-color: var(--white);
+            animation: spin 1s ease-in-out infinite;
+            margin-right: 10px;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
         /* Mobile Responsive */
         @media (max-width: 968px) {
             .nav-links {
                 display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: rgba(10, 25, 47, 0.98);
+                flex-direction: column;
+                padding: 20px;
+                gap: 20px;
+            }
+
+            .nav-links.active {
+                display: flex;
             }
 
             .mobile-menu-btn {
                 display: block;
             }
 
+            .logo-img {
+                height: 35px;
+            }
+
+            .logo-text {
+                font-size: 14px;
+            }
+
             .hero-stats {
                 grid-template-columns: repeat(2, 1fr);
+            }
+
+            .stat-number {
+                font-size: 32px;
             }
 
             .market-grid,
@@ -1034,6 +1141,10 @@
             .scenario-card.middle {
                 order: -1;
             }
+
+            .form-container {
+                padding: 30px 20px;
+            }
         }
 
         @media (max-width: 480px) {
@@ -1052,10 +1163,14 @@
             .summary-number {
                 font-size: 32px;
             }
+
+            .nav-phone {
+                display: none;
+            }
         }
 
         /* Utility Classes */
-        .text-accent { color: var(--accent-turquoise); }
+        .text-accent { color: var(--logo-blue); }
         .text-center { text-align: center; }
         .mb-20 { margin-bottom: 20px; }
         .mb-40 { margin-bottom: 40px; }
@@ -1067,16 +1182,22 @@
     <nav class="nav">
         <div class="nav-container">
             <a href="#" class="logo">
-                <i class="fas fa-water"></i>
-                ЧИСТАЯ АУРА
+                <img src="/mnt/kimi/upload/IMG_3180(1).PNG" alt="Чистая Аура" class="logo-img">
+                <div class="logo-text">
+                    ЧИСТАЯ АУРА
+                    <span>Робомойки</span>
+                </div>
             </a>
-            <ul class="nav-links">
+            <ul class="nav-links" id="navLinks">
                 <li><a href="#market">Рынок</a></li>
                 <li><a href="#economics">Экономика</a></li>
                 <li><a href="#locations">Объекты</a></li>
                 <li><a href="#support">Поддержка</a></li>
             </ul>
-            <a href="tel:+79836020102" class="nav-phone">+7 (983) 602-01-02</a>
+            <a href="tel:+79836020102" class="nav-phone">
+                <i class="fas fa-phone"></i>
+                +7 (983) 602-01-02
+            </a>
             <button class="mobile-menu-btn" onclick="toggleMenu()">
                 <i class="fas fa-bars"></i>
             </button>
@@ -1087,7 +1208,10 @@
     <section class="hero" id="hero">
         <div class="hero-grid"></div>
         <div class="hero-content">
-            <div class="hero-badge">Федеральная сеть робомоек</div>
+            <div class="hero-badge">
+                <i class="fas fa-check-circle"></i>
+                Федеральная сеть робомоек
+            </div>
             <h1>Инвестируйте в <span>роботизированные автомойки</span></h1>
             <p class="hero-subtitle">Готовый бизнес с окупаемостью 12-18 месяцев. 280+ работающих объектов. Полная автоматизация без персонала.</p>
             
@@ -1286,14 +1410,14 @@
                             </tbody>
                         </table>
                     </div>
-                    <div style="margin-top: 20px; padding: 20px; background: rgba(100, 255, 218, 0.1); border-radius: 8px;">
+                    <div style="margin-top: 20px; padding: 20px; background: rgba(0, 188, 212, 0.1); border-radius: 8px;">
                         <div style="display: flex; justify-content: space-between; margin-bottom: 10px;">
                             <span>Средний чек:</span>
-                            <span class="number-font" style="color: var(--accent-turquoise); font-weight: 700;">480 ₽</span>
+                            <span class="number-font" style="color: var(--logo-blue); font-weight: 700;">480 ₽</span>
                         </div>
                         <div style="display: flex; justify-content: space-between;">
                             <span>Средняя маржинальность:</span>
-                            <span class="number-font" style="color: var(--accent-turquoise); font-weight: 700;">81%</span>
+                            <span class="number-font" style="color: var(--logo-blue); font-weight: 700;">81%</span>
                         </div>
                     </div>
                 </div>
@@ -1312,7 +1436,7 @@
                     </div>
                     <div class="scenario-metric">
                         <div class="scenario-label">Чистая прибыль</div>
-                        <div class="scenario-value" style="color: var(--accent-turquoise);">420 000 ₽</div>
+                        <div class="scenario-value" style="color: var(--logo-blue);">420 000 ₽</div>
                     </div>
                     <div class="scenario-metric">
                         <div class="scenario-label">Окупаемость</div>
@@ -1332,7 +1456,7 @@
                     </div>
                     <div class="scenario-metric">
                         <div class="scenario-label">Чистая прибыль</div>
-                        <div class="scenario-value" style="color: var(--accent-turquoise);">750 000 ₽</div>
+                        <div class="scenario-value" style="color: var(--logo-blue);">750 000 ₽</div>
                     </div>
                     <div class="scenario-metric">
                         <div class="scenario-label">Окупаемость</div>
@@ -1352,7 +1476,7 @@
                     </div>
                     <div class="scenario-metric">
                         <div class="scenario-label">Чистая прибыль</div>
-                        <div class="scenario-value" style="color: var(--accent-turquoise);">1 100 000 ₽</div>
+                        <div class="scenario-value" style="color: var(--logo-blue);">1 100 000 ₽</div>
                     </div>
                     <div class="scenario-metric">
                         <div class="scenario-label">Окупаемость</div>
@@ -1617,35 +1741,42 @@
                     <form id="investorForm">
                         <div class="form-row">
                             <div class="form-group">
-                                <label for="name">Ваше имя</label>
+                                <label for="name">Ваше имя *</label>
                                 <input type="text" id="name" name="name" required placeholder="Иван Иванов">
                             </div>
                             <div class="form-group">
-                                <label for="phone">Телефон</label>
+                                <label for="phone">Телефон *</label>
                                 <input type="tel" id="phone" name="phone" required placeholder="+7 (___) ___-__-__">
                             </div>
                         </div>
                         
                         <div class="form-group">
-                            <label for="email">Email</label>
+                            <label for="email">Email *</label>
                             <input type="email" id="email" name="email" required placeholder="example@mail.ru">
                         </div>
                         
                         <div class="form-group">
-                            <label for="format">Интересует формат</label>
+                            <label for="format">Интересует формат *</label>
                             <select id="format" name="format" required>
                                 <option value="">Выберите вариант</option>
-                                <option value="single">Один пост (6.5 млн ₽)</option>
-                                <option value="double">Два поста (13 млн ₽)</option>
-                                <option value="network">Сеть 3+ постов (от 19.5 млн ₽)</option>
-                                <option value="consult">Нужна консультация</option>
+                                <option value="Один пост (6.5 млн ₽)">Один пост (6.5 млн ₽)</option>
+                                <option value="Два поста (13 млн ₽)">Два поста (13 млн ₽)</option>
+                                <option value="Сеть 3+ постов (от 19.5 млн ₽)">Сеть 3+ постов (от 19.5 млн ₽)</option>
+                                <option value="Нужна консультация">Нужна консультация</option>
                             </select>
                         </div>
+
+                        <div class="form-group">
+                            <label for="comment">Комментарий (необязательно)</label>
+                            <input type="text" id="comment" name="comment" placeholder="Ваши вопросы или предпочтения">
+                        </div>
                         
-                        <button type="submit" class="btn-submit">
+                        <button type="submit" class="btn-submit" id="submitBtn">
                             Получить предложение
                             <i class="fas fa-paper-plane" style="margin-left: 8px;"></i>
                         </button>
+
+                        <div class="form-status" id="formStatus"></div>
                     </form>
                 </div>
 
@@ -1658,7 +1789,7 @@
                         <i class="fas fa-envelope"></i>
                         <span>partners@chistaya-aura.ru</span>
                     </a>
-                    <a href="#" class="contact-item">
+                    <a href="https://t.me/chistayaaura" class="contact-item" target="_blank">
                         <i class="fab fa-telegram"></i>
                         <span>Telegram</span>
                     </a>
@@ -1670,11 +1801,16 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
+            <img src="/mnt/kimi/upload/IMG_3180(1).PNG" alt="Чистая Аура" class="footer-logo">
             <p>© 2025 Чистая Аура. Инвестиции в чистое будущее.</p>
         </div>
     </footer>
 
     <script>
+        // Telegram Bot Configuration - ВАШИ ДАННЫЕ
+        const TELEGRAM_BOT_TOKEN = '6308439103:AAFiNDU-xgnGtfRR_hexF3m9AVrTaD895PE';
+        const TELEGRAM_CHAT_ID = '6308439103';
+
         // Animate numbers on scroll
         function animateNumbers() {
             const numbers = document.querySelectorAll('.stat-number[data-target]');
@@ -1705,7 +1841,6 @@
                     }
                 };
                 
-                // Start animation when element is visible
                 const observer = new IntersectionObserver((entries) => {
                     entries.forEach(entry => {
                         if (entry.isIntersecting) {
@@ -1747,33 +1882,13 @@
                         behavior: 'smooth',
                         block: 'start'
                     });
+                    // Close mobile menu if open
+                    document.getElementById('navLinks').classList.remove('active');
                 }
             });
         });
 
-        // Form handling
-        document.getElementById('investorForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // Collect form data
-            const formData = {
-                name: document.getElementById('name').value,
-                phone: document.getElementById('phone').value,
-                email: document.getElementById('email').value,
-                format: document.getElementById('format').value
-            };
-            
-            // Here you would normally send data to server
-            console.log('Form submitted:', formData);
-            
-            // Show success message
-            alert('Спасибо! Мы отправили инвестиционное предложение на ваш email в течение 15 минут.');
-            
-            // Reset form
-            this.reset();
-        });
-
-        // Phone mask
+        // Format phone number
         const phoneInput = document.getElementById('phone');
         phoneInput.addEventListener('input', function(e) {
             let value = e.target.value.replace(/\D/g, '');
@@ -1792,9 +1907,86 @@
 
         // Mobile menu toggle
         function toggleMenu() {
-            const navLinks = document.querySelector('.nav-links');
-            navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
+            const navLinks = document.getElementById('navLinks');
+            navLinks.classList.toggle('active');
         }
+
+        // Send message to Telegram
+        async function sendToTelegram(formData) {
+            const message = `
+🚀 <b>Новая заявка с сайта Чистая Аура</b>
+
+👤 <b>Имя:</b> ${formData.name}
+📱 <b>Телефон:</b> ${formData.phone}
+📧 <b>Email:</b> ${formData.email}
+💼 <b>Формат:</b> ${formData.format}
+💬 <b>Комментарий:</b> ${formData.comment || 'Нет'}
+
+📅 <b>Дата:</b> ${new Date().toLocaleString('ru-RU')}
+🌐 <b>Источник:</b> ${window.location.href}
+            `;
+
+            const url = `https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`;
+            
+            try {
+                const response = await fetch(url, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        chat_id: TELEGRAM_CHAT_ID,
+                        text: message,
+                        parse_mode: 'HTML'
+                    })
+                });
+
+                const data = await response.json();
+                return data.ok;
+            } catch (error) {
+                console.error('Error sending to Telegram:', error);
+                return false;
+            }
+        }
+
+        // Form handling
+        document.getElementById('investorForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const submitBtn = document.getElementById('submitBtn');
+            const formStatus = document.getElementById('formStatus');
+            const originalBtnText = submitBtn.innerHTML;
+            
+            // Collect form data
+            const formData = {
+                name: document.getElementById('name').value.trim(),
+                phone: document.getElementById('phone').value.trim(),
+                email: document.getElementById('email').value.trim(),
+                format: document.getElementById('format').value,
+                comment: document.getElementById('comment').value.trim()
+            };
+            
+            // Show loading state
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = '<span class="spinner"></span> Отправка...';
+            formStatus.className = 'form-status';
+            
+            // Send to Telegram
+            const success = await sendToTelegram(formData);
+            
+            if (success) {
+                formStatus.className = 'form-status success';
+                formStatus.innerHTML = '<i class="fas fa-check-circle"></i> Спасибо! Заявка отправлена. Мы свяжемся с вами в течение 15 минут.';
+                this.reset();
+            } else {
+                formStatus.className = 'form-status error';
+                formStatus.innerHTML = '<i class="fas fa-exclamation-circle"></i> Ошибка отправки. Пожалуйста, позвоните нам: +7 (983) 602-01-02';
+            }
+            
+            // Reset button
+            submitBtn.disabled = false;
+            submitBtn.innerHTML = originalBtnText;
+        });
 
         // Initialize
         document.addEventListener('DOMContentLoaded', function() {

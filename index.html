@@ -1889,7 +1889,7 @@
 🌐 <b>Источник:</b> ${window.location.href}
             `;
 
-            const url = `https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`;
+            const url = `https://api.telegram.org/bot${6308439103:AAFiNDU-xgnGtfRR_hexF3m9AVrTaD895PE}/sendMessage`;
             
             try {
                 const response = await fetch(url, {
@@ -1898,7 +1898,7 @@
                         'Content-Type': 'application/json',
                     },
                     body: JSON.stringify({
-                        chat_id: TELEGRAM_CHAT_ID,
+                        chat_id: 6308439103,
                         text: message,
                         parse_mode: 'HTML'
                     })

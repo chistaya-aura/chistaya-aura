@@ -60,7 +60,7 @@
             position: fixed;
             top: 0;
             width: 100%;
-            padding: 15px 0;
+            padding: 20px 0;
             background: rgba(10, 25, 47, 0.95);
             backdrop-filter: blur(10px);
             z-index: 1000;
@@ -78,33 +78,14 @@
         }
 
         .logo {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 24px;
+            font-weight: 800;
+            color: var(--logo-blue);
+            text-decoration: none;
             display: flex;
             align-items: center;
-            text-decoration: none;
-            gap: 12px;
-        }
-
-        .logo-img {
-            height: 45px;
-            width: auto;
-            filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
-        }
-
-        .logo-text {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 18px;
-            font-weight: 700;
-            color: var(--white);
-            line-height: 1.2;
-        }
-
-        .logo-text span {
-            display: block;
-            font-size: 12px;
-            font-weight: 500;
-            color: var(--accent-turquoise);
-            letter-spacing: 2px;
-            text-transform: uppercase;
+            gap: 10px;
         }
 
         .nav-links {
@@ -1029,12 +1010,6 @@
             font-size: 14px;
         }
 
-        .footer-logo {
-            height: 40px;
-            margin-bottom: 20px;
-            opacity: 0.8;
-        }
-
         /* Animations */
         @keyframes fadeInUp {
             from {
@@ -1094,14 +1069,6 @@
 
             .mobile-menu-btn {
                 display: block;
-            }
-
-            .logo-img {
-                height: 35px;
-            }
-
-            .logo-text {
-                font-size: 14px;
             }
 
             .hero-stats {
@@ -1182,11 +1149,8 @@
     <nav class="nav">
         <div class="nav-container">
             <a href="#" class="logo">
-                <img src="/mnt/kimi/upload/IMG_3180(1).PNG" alt="Чистая Аура" class="logo-img">
-                <div class="logo-text">
-                    ЧИСТАЯ АУРА
-                    <span>Робомойки</span>
-                </div>
+                <i class="fas fa-water"></i>
+                ЧИСТАЯ АУРА
             </a>
             <ul class="nav-links" id="navLinks">
                 <li><a href="#market">Рынок</a></li>
@@ -1789,7 +1753,7 @@
                         <i class="fas fa-envelope"></i>
                         <span>partners@chistaya-aura.ru</span>
                     </a>
-                    <a href="https://t.me/chistayaaura" class="contact-item" target="_blank">
+                    <a href="https://t.me/nik_katrenko" class="contact-item" target="_blank">
                         <i class="fab fa-telegram"></i>
                         <span>Telegram</span>
                     </a>
@@ -1801,13 +1765,12 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <img src="/mnt/kimi/upload/IMG_3180(1).PNG" alt="Чистая Аура" class="footer-logo">
             <p>© 2025 Чистая Аура. Инвестиции в чистое будущее.</p>
         </div>
     </footer>
 
     <script>
-        // Telegram Bot Configuration - ВАШИ ДАННЫЕ
+        // Telegram Bot Configuration - НОВЫЙ БОТ Link1377_bot
         const TELEGRAM_BOT_TOKEN = '6308439103:AAFiNDU-xgnGtfRR_hexF3m9AVrTaD895PE';
         const TELEGRAM_CHAT_ID = '6308439103';
 

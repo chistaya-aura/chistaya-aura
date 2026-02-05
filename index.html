@@ -1702,7 +1702,12 @@
                 <p class="cta-subtitle animate-on-scroll">PDF с финансовой моделью, сравнением форматов и примерами работающих объектов</p>
                 
                 <div class="form-container animate-on-scroll">
-                    <form id="investorForm">
+                    <!-- Formspree Form -->
+                    <form id="investorForm" action="https://formspree.io/f/mkovwvyy" method="POST">
+                        <!-- Hidden fields for Formspree -->
+                        <input type="hidden" name="_subject" value="Новая заявка с сайта Чистая Аура">
+                        <input type="hidden" name="_template" value="table">
+                        
                         <div class="form-row">
                             <div class="form-group">
                                 <label for="name">Ваше имя *</label>
@@ -1770,9 +1775,8 @@
     </footer>
 
     <script>
-        // Telegram Bot Configuration - НОВЫЙ БОТ Link1377_bot
-        const TELEGRAM_BOT_TOKEN = '6308439103:AAFiNDU-xgnGtfRR_hexF3m9AVrTaD895PE';
-        const TELEGRAM_CHAT_ID = '6308439103';
+        // Formspree Configuration
+        const FORMSPREE_URL = 'https://formspree.io/f/mkovwvyy';
 
         // Animate numbers on scroll
         function animateNumbers() {
@@ -1845,7 +1849,6 @@
                         behavior: 'smooth',
                         block: 'start'
                     });
-                    // Close mobile menu if open
                     document.getElementById('navLinks').classList.remove('active');
                 }
             });
@@ -1874,74 +1877,39 @@
             navLinks.classList.toggle('active');
         }
 
-        // Send message to Telegram
-        async function sendToTelegram(formData) {
-            const message = `
-🚀 <b>Новая заявка с сайта Чистая Аура</b>
-
-👤 <b>Имя:</b> ${formData.name}
-📱 <b>Телефон:</b> ${formData.phone}
-📧 <b>Email:</b> ${formData.email}
-💼 <b>Формат:</b> ${formData.format}
-💬 <b>Комментарий:</b> ${formData.comment || 'Нет'}
-
-📅 <b>Дата:</b> ${new Date().toLocaleString('ru-RU')}
-🌐 <b>Источник:</b> ${window.location.href}
-            `;
-
-            const url = `https://api.telegram.org/bot${6308439103:AAFiNDU-xgnGtfRR_hexF3m9AVrTaD895PE}/sendMessage`;
-            
-            try {
-                const response = await fetch(url, {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
-                    body: JSON.stringify({
-                        chat_id: 6308439103,
-                        text: message,
-                        parse_mode: 'HTML'
-                    })
-                });
-
-                const data = await response.json();
-                return data.ok;
-            } catch (error) {
-                console.error('Error sending to Telegram:', error);
-                return false;
-            }
-        }
-
-        // Form handling
+        // Formspree form handling with AJAX
         document.getElementById('investorForm').addEventListener('submit', async function(e) {
             e.preventDefault();
             
             const submitBtn = document.getElementById('submitBtn');
             const formStatus = document.getElementById('formStatus');
             const originalBtnText = submitBtn.innerHTML;
-            
-            // Collect form data
-            const formData = {
-                name: document.getElementById('name').value.trim(),
-                phone: document.getElementById('phone').value.trim(),
-                email: document.getElementById('email').value.trim(),
-                format: document.getElementById('format').value,
-                comment: document.getElementById('comment').value.trim()
-            };
+            const form = this;
             
             // Show loading state
             submitBtn.disabled = true;
             submitBtn.innerHTML = '<span class="spinner"></span> Отправка...';
             formStatus.className = 'form-status';
             
-            // Send to Telegram
-            const success = await sendToTelegram(formData);
-            
-            if (success) {
-                formStatus.className = 'form-status success';
-                formStatus.innerHTML = '<i class="fas fa-check-circle"></i> Спасибо! Заявка отправлена. Мы свяжемся с вами в течение 15 минут.';
-                this.reset();
-            } else {
+            try {
+                const formData = new FormData(form);
+                
+                const response = await fetch(FORMSPREE_URL, {
+                    method: 'POST',
+                    body: formData,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                });
+                
+                if (response.ok) {
+                    formStatus.className = 'form-status success';
+                    formStatus.innerHTML = '<i class="fas fa-check-circle"></i> Спасибо! Заявка отправлена. Мы свяжемся с вами в течение 15 минут.';
+                    form.reset();
+                } else {
+                    throw new Error('Server error');
+                }
+            } catch (error) {
                 formStatus.className = 'form-status error';
                 formStatus.innerHTML = '<i class="fas fa-exclamation-circle"></i> Ошибка отправки. Пожалуйста, позвоните нам: +7 (983) 602-01-02';
             }

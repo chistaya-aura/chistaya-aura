@@ -90,7 +90,7 @@
 
         .nav-links {
             display: flex;
-            gap: 40px;
+            gap: 30px;
             list-style: none;
         }
 
@@ -360,15 +360,195 @@
             max-width: 600px;
         }
 
-        /* Market Section */
-        .market {
+        /* Objects Section - NEW */
+        .objects {
             background: var(--white);
             color: var(--deep-blue);
         }
 
-        .market .section-title,
-        .market .section-subtitle {
+        .objects .section-title,
+        .objects .section-subtitle {
             color: var(--deep-blue);
+        }
+
+        .objects-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+        }
+
+        .object-card {
+            background: var(--light-gray);
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid rgba(0, 188, 212, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .object-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            border-color: var(--logo-blue);
+        }
+
+        .object-slider {
+            position: relative;
+            width: 100%;
+            height: 280px;
+            overflow: hidden;
+            background: var(--graphite);
+        }
+
+        .object-slider-track {
+            display: flex;
+            transition: transform 0.4s ease;
+            height: 100%;
+        }
+
+        .object-slide {
+            min-width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #1D2D44 0%, #0A192F 100%);
+        }
+
+        .object-slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .object-slide-placeholder {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-gray);
+            gap: 15px;
+        }
+
+        .object-slide-placeholder i {
+            font-size: 48px;
+            color: var(--logo-blue);
+            opacity: 0.5;
+        }
+
+        .object-slide-placeholder span {
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .slider-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 40px;
+            height: 40px;
+            background: rgba(10, 25, 47, 0.8);
+            border: none;
+            border-radius: 50%;
+            color: var(--white);
+            font-size: 16px;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 10;
+        }
+
+        .slider-btn:hover {
+            background: var(--logo-blue);
+        }
+
+        .slider-btn.prev {
+            left: 15px;
+        }
+
+        .slider-btn.next {
+            right: 15px;
+        }
+
+        .slider-dots {
+            position: absolute;
+            bottom: 15px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 8px;
+            z-index: 10;
+        }
+
+        .slider-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.4);
+            cursor: pointer;
+            transition: all 0.3s;
+            border: none;
+        }
+
+        .slider-dot.active {
+            background: var(--logo-blue);
+            width: 24px;
+            border-radius: 4px;
+        }
+
+        .object-info {
+            padding: 25px 30px;
+        }
+
+        .object-location {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 12px;
+            color: var(--logo-blue);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .object-name {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--deep-blue);
+            margin-bottom: 8px;
+        }
+
+        .object-address {
+            font-size: 14px;
+            color: #666;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .object-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            margin-top: 15px;
+            padding: 6px 12px;
+            background: rgba(0, 188, 212, 0.1);
+            border-radius: 20px;
+            font-size: 12px;
+            color: var(--deep-blue);
+            font-weight: 500;
+        }
+
+        .object-badge i {
+            color: var(--logo-blue);
+        }
+
+        /* Market Section */
+        .market {
+            background: var(--deep-blue);
         }
 
         .market-grid {
@@ -379,7 +559,7 @@
 
         .market-card {
             padding: 40px;
-            background: var(--light-gray);
+            background: rgba(0, 188, 212, 0.05);
             border-radius: 8px;
             border-left: 4px solid var(--logo-blue);
             transition: transform 0.3s;
@@ -393,25 +573,25 @@
             font-family: 'Space Grotesk', sans-serif;
             font-size: 56px;
             font-weight: 700;
-            color: var(--deep-blue);
+            color: var(--logo-blue);
             margin-bottom: 10px;
         }
 
         .market-label {
             font-size: 16px;
-            color: var(--graphite);
+            color: var(--white);
             font-weight: 600;
         }
 
         .market-desc {
             font-size: 14px;
-            color: #666;
+            color: var(--text-gray);
             margin-top: 10px;
         }
 
         /* Comparison Section */
         .comparison {
-            background: var(--deep-blue);
+            background: var(--graphite);
         }
 
         .comparison-grid {
@@ -496,7 +676,7 @@
 
         /* Economics Section */
         .economics {
-            background: var(--graphite);
+            background: var(--deep-blue);
         }
 
         .economics-grid {
@@ -1079,6 +1259,14 @@
                 font-size: 32px;
             }
 
+            .objects-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .object-slider {
+                height: 240px;
+            }
+
             .market-grid,
             .comparison-grid,
             .scenarios,
@@ -1134,6 +1322,10 @@
             .nav-phone {
                 display: none;
             }
+
+            .object-slider {
+                height: 200px;
+            }
         }
 
         /* Utility Classes */
@@ -1142,6 +1334,7 @@
         .mb-20 { margin-bottom: 20px; }
         .mb-40 { margin-bottom: 40px; }
     </style>
+<base target="_blank">
 </head>
 <body>
 
@@ -1153,9 +1346,10 @@
                 ЧИСТАЯ АУРА
             </a>
             <ul class="nav-links" id="navLinks">
+                <li><a href="#objects">Объекты</a></li>
                 <li><a href="#market">Рынок</a></li>
                 <li><a href="#economics">Экономика</a></li>
-                <li><a href="#locations">Объекты</a></li>
+                <li><a href="#locations">Локации</a></li>
                 <li><a href="#support">Поддержка</a></li>
             </ul>
             <a href="tel:+79836020102" class="nav-phone">
@@ -1210,9 +1404,230 @@
             </div>
         </div>
         
-        <div class="scroll-indicator" onclick="document.getElementById('market').scrollIntoView({behavior: 'smooth'})">
+        <div class="scroll-indicator" onclick="document.getElementById('objects').scrollIntoView({behavior: 'smooth'})">
             <span>Узнать больше</span>
             <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Objects Section - NEW -->
+    <section class="objects" id="objects">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag" style="color: var(--deep-blue); opacity: 0.6;">Реальные объекты</span>
+                <h2 class="section-title">Работающие объекты</h2>
+                <p class="section-subtitle">Убедитесь сами — наши робомойки успешно функционируют в разных регионах России. Реальный бизнес с реальными результатами.</p>
+            </div>
+
+            <div class="objects-grid">
+                <!-- Object 1: Владикавказ -->
+                <div class="object-card animate-on-scroll">
+                    <div class="object-slider" data-slider="vladikavkaz">
+                        <div class="object-slider-track">
+                            <div class="object-slide">
+                                <div class="object-slide-placeholder">
+                                    <i class="fas fa-image"></i>
+                                    <span>Фото 1</span>
+                                </div>
+                            </div>
+                            <div class="object-slide">
+                                <div class="object-slide-placeholder">
+                                    <i class="fas fa-image"></i>
+                                    <span>Фото 2</span>
+                                </div>
+                            </div>
+                            <div class="object-slide">
+                                <div class="object-slide-placeholder">
+                                    <i class="fas fa-image"></i>
+                                    <span>Фото 3</span>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="slider-btn prev" onclick="moveSlider('vladikavkaz', -1)">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="slider-btn next" onclick="moveSlider('vladikavkaz', 1)">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                        <div class="slider-dots">
+                            <button class="slider-dot active" onclick="goToSlide('vladikavkaz', 0)"></button>
+                            <button class="slider-dot" onclick="goToSlide('vladikavkaz', 1)"></button>
+                            <button class="slider-dot" onclick="goToSlide('vladikavkaz', 2)"></button>
+                        </div>
+                    </div>
+                    <div class="object-info">
+                        <div class="object-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Владикавказ
+                        </div>
+                        <h3 class="object-name">Робомойка «Чистая Аура»</h3>
+                        <div class="object-address">
+                            <i class="fas fa-location-arrow"></i>
+                            ул. Грибоедова, 2
+                        </div>
+                        <span class="object-badge">
+                            <i class="fas fa-robot"></i>
+                            Роботизированная автомойка
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Object 2: Волгоград -->
+                <div class="object-card animate-on-scroll">
+                    <div class="object-slider" data-slider="volgograd">
+                        <div class="object-slider-track">
+                            <div class="object-slide">
+                                <div class="object-slide-placeholder">
+                                    <i class="fas fa-image"></i>
+                                    <span>Фото 1</span>
+                                </div>
+                            </div>
+                            <div class="object-slide">
+                                <div class="object-slide-placeholder">
+                                    <i class="fas fa-image"></i>
+                                    <span>Фото 2</span>
+                                </div>
+                            </div>
+                            <div class="object-slide">
+                                <div class="object-slide-placeholder">
+                                    <i class="fas fa-image"></i>
+                                    <span>Фото 3</span>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="slider-btn prev" onclick="moveSlider('volgograd', -1)">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="slider-btn next" onclick="moveSlider('volgograd', 1)">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                        <div class="slider-dots">
+                            <button class="slider-dot active" onclick="goToSlide('volgograd', 0)"></button>
+                            <button class="slider-dot" onclick="goToSlide('volgograd', 1)"></button>
+                            <button class="slider-dot" onclick="goToSlide('volgograd', 2)"></button>
+                        </div>
+                    </div>
+                    <div class="object-info">
+                        <div class="object-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Волгоград
+                        </div>
+                        <h3 class="object-name">Робомойка «Чистая Аура»</h3>
+                        <div class="object-address">
+                            <i class="fas fa-location-arrow"></i>
+                            Жигулёвская база
+                        </div>
+                        <span class="object-badge">
+                            <i class="fas fa-robot"></i>
+                            Роботизированная автомойка
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Object 3: Рязань -->
+                <div class="object-card animate-on-scroll">
+                    <div class="object-slider" data-slider="ryazan">
+                        <div class="object-slider-track">
+                            <div class="object-slide">
+                                <div class="object-slide-placeholder">
+                                    <i class="fas fa-image"></i>
+                                    <span>Фото 1</span>
+                                </div>
+                            </div>
+                            <div class="object-slide">
+                                <div class="object-slide-placeholder">
+                                    <i class="fas fa-image"></i>
+                                    <span>Фото 2</span>
+                                </div>
+                            </div>
+                            <div class="object-slide">
+                                <div class="object-slide-placeholder">
+                                    <i class="fas fa-image"></i>
+                                    <span>Фото 3</span>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="slider-btn prev" onclick="moveSlider('ryazan', -1)">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="slider-btn next" onclick="moveSlider('ryazan', 1)">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                        <div class="slider-dots">
+                            <button class="slider-dot active" onclick="goToSlide('ryazan', 0)"></button>
+                            <button class="slider-dot" onclick="goToSlide('ryazan', 1)"></button>
+                            <button class="slider-dot" onclick="goToSlide('ryazan', 2)"></button>
+                        </div>
+                    </div>
+                    <div class="object-info">
+                        <div class="object-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Рязань
+                        </div>
+                        <h3 class="object-name">Алмаз Авто</h3>
+                        <div class="object-address">
+                            <i class="fas fa-location-arrow"></i>
+                            Робомойка на территории комплекса
+                        </div>
+                        <span class="object-badge">
+                            <i class="fas fa-robot"></i>
+                            Роботизированная автомойка
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Object 4: Туапсе -->
+                <div class="object-card animate-on-scroll">
+                    <div class="object-slider" data-slider="tuapse">
+                        <div class="object-slider-track">
+                            <div class="object-slide">
+                                <div class="object-slide-placeholder">
+                                    <i class="fas fa-image"></i>
+                                    <span>Фото 1</span>
+                                </div>
+                            </div>
+                            <div class="object-slide">
+                                <div class="object-slide-placeholder">
+                                    <i class="fas fa-image"></i>
+                                    <span>Фото 2</span>
+                                </div>
+                            </div>
+                            <div class="object-slide">
+                                <div class="object-slide-placeholder">
+                                    <i class="fas fa-image"></i>
+                                    <span>Фото 3</span>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="slider-btn prev" onclick="moveSlider('tuapse', -1)">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="slider-btn next" onclick="moveSlider('tuapse', 1)">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                        <div class="slider-dots">
+                            <button class="slider-dot active" onclick="goToSlide('tuapse', 0)"></button>
+                            <button class="slider-dot" onclick="goToSlide('tuapse', 1)"></button>
+                            <button class="slider-dot" onclick="goToSlide('tuapse', 2)"></button>
+                        </div>
+                    </div>
+                    <div class="object-info">
+                        <div class="object-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Туапсе
+                        </div>
+                        <h3 class="object-name">Робомойка «Чистая Аура»</h3>
+                        <div class="object-address">
+                            <i class="fas fa-location-arrow"></i>
+                            ул. Богдана Хмельницкого, 16
+                        </div>
+                        <span class="object-badge">
+                            <i class="fas fa-robot"></i>
+                            Роботизированная автомойка
+                        </span>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -1775,6 +2190,65 @@
     </footer>
 
     <script>
+        // Slider State Management
+        const sliders = {
+            vladikavkaz: { current: 0, total: 3 },
+            volgograd: { current: 0, total: 3 },
+            ryazan: { current: 0, total: 3 },
+            tuapse: { current: 0, total: 3 }
+        };
+
+        // Move Slider
+        function moveSlider(sliderId, direction) {
+            const slider = sliders[sliderId];
+            if (!slider) return;
+
+            slider.current += direction;
+            
+            if (slider.current < 0) {
+                slider.current = slider.total - 1;
+            } else if (slider.current >= slider.total) {
+                slider.current = 0;
+            }
+
+            updateSlider(sliderId);
+        }
+
+        // Go to specific slide
+        function goToSlide(sliderId, index) {
+            const slider = sliders[sliderId];
+            if (!slider) return;
+
+            slider.current = index;
+            updateSlider(sliderId);
+        }
+
+        // Update Slider Visuals
+        function updateSlider(sliderId) {
+            const sliderElement = document.querySelector(`[data-slider="${sliderId}"]`);
+            if (!sliderElement) return;
+
+            const track = sliderElement.querySelector('.object-slider-track');
+            const dots = sliderElement.querySelectorAll('.slider-dot');
+
+            // Update track position
+            track.style.transform = `translateX(-${sliders[sliderId].current * 100}%)`;
+
+            // Update dots
+            dots.forEach((dot, index) => {
+                dot.classList.toggle('active', index === sliders[sliderId].current);
+            });
+        }
+
+        // Auto-play sliders
+        function initAutoPlay() {
+            Object.keys(sliders).forEach(sliderId => {
+                setInterval(() => {
+                    moveSlider(sliderId, 1);
+                }, 5000);
+            });
+        }
+
         // Formspree Configuration
         const FORMSPREE_URL = 'https://formspree.io/f/mkovwvyy';
 
@@ -1923,6 +2397,7 @@
         document.addEventListener('DOMContentLoaded', function() {
             animateNumbers();
             initScrollAnimations();
+            initAutoPlay();
         });
 
         // Navigation background on scroll

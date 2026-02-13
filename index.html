@@ -8,24 +8,24 @@
         m[i].l=1*new Date();
         for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
         k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
-    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=106729511', 'ym');
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=106729511  ', 'ym');
 
     ym(106729511, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
 </script>
-<noscript><div><img src="https://mc.yandex.ru/watch/106729511" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<noscript><div><img src="https://mc.yandex.ru/watch/106729511  " style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Чистая Аура — Инвестиции в роботизированные автомойки | Окупаемость 12-18 мес</title>
-    <meta name="description" content="Инвестируйте в роботизированные автомойки. Окупаемость 12-18 месяцев, доходность до 80%. 30+ работающих объектов. Вход от 6.5 млн ₽.">
+    <title>Чистая Аура — Инвестиции в роботизированные автомойки | Доход от 420 000 ₽/мес</title>
+    <meta name="description" content="Инвестируйте в роботизированные автомойки. Доход от 420 000 ₽/мес, окупаемость 12-18 месяцев, вход от 6.5 млн ₽. 30+ работающих объектов.">
     
     <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com  ">
+    <link rel="preconnect" href="https://fonts.gstatic.com  " crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400  ;500;600&family=Montserrat:wght@600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
     
     <!-- Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css  ">
     
     <style>
         :root {
@@ -38,6 +38,7 @@
             --gold: #FFD700;
             --logo-blue: #00BCD4;
             --gradient-dark: linear-gradient(135deg, #0A192F 0%, #112240 100%);
+            --gradient-accent: linear-gradient(135deg, #00BCD4 0%, #64FFDA 100%);
         }
 
         * {
@@ -73,9 +74,9 @@
             position: fixed;
             top: 0;
             width: 100%;
-            padding: 20px 0;
-            background: rgba(10, 25, 47, 0.95);
-            backdrop-filter: blur(10px);
+            padding: 15px 0;
+            background: rgba(10, 25, 47, 0.98);
+            backdrop-filter: blur(20px);
             z-index: 1000;
             border-bottom: 1px solid rgba(100, 255, 218, 0.1);
             transition: all 0.3s ease;
@@ -92,7 +93,7 @@
 
         .logo {
             font-family: 'Montserrat', sans-serif;
-            font-size: 24px;
+            font-size: 22px;
             font-weight: 800;
             color: var(--logo-blue);
             text-decoration: none;
@@ -142,7 +143,7 @@
             font-size: 14px;
             border: 1px solid var(--accent-turquoise);
             padding: 10px 20px;
-            border-radius: 4px;
+            border-radius: 30px;
             transition: all 0.3s;
             display: flex;
             align-items: center;
@@ -162,7 +163,7 @@
             cursor: pointer;
         }
 
-        /* Hero Section */
+        /* Hero Section - NEW DESIGN */
         .hero {
             min-height: 100vh;
             display: flex;
@@ -181,8 +182,8 @@
             right: 0;
             bottom: 0;
             background: 
-                radial-gradient(circle at 20% 50%, rgba(0, 188, 212, 0.08) 0%, transparent 50%),
-                radial-gradient(circle at 80% 80%, rgba(100, 255, 218, 0.05) 0%, transparent 50%);
+                radial-gradient(circle at 80% 20%, rgba(0, 188, 212, 0.15) 0%, transparent 40%),
+                radial-gradient(circle at 20% 80%, rgba(100, 255, 218, 0.08) 0%, transparent 40%);
             pointer-events: none;
         }
 
@@ -195,16 +196,28 @@
             background-image: 
                 linear-gradient(rgba(0, 188, 212, 0.03) 1px, transparent 1px),
                 linear-gradient(90deg, rgba(0, 188, 212, 0.03) 1px, transparent 1px);
-            background-size: 50px 50px;
-            opacity: 0.5;
+            background-size: 60px 60px;
+            opacity: 0.4;
         }
 
         .hero-content {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 60px 20px 80px;
+            padding: 40px 20px;
             position: relative;
             z-index: 2;
+        }
+
+        .hero-top {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+            margin-bottom: 60px;
+        }
+
+        .hero-left {
+            animation: fadeInUp 0.8s ease;
         }
 
         .hero-badge {
@@ -220,120 +233,133 @@
             font-weight: 600;
             text-transform: uppercase;
             letter-spacing: 1px;
-            margin-bottom: 30px;
-            animation: fadeInUp 0.8s ease;
+            margin-bottom: 25px;
         }
 
         .hero h1 {
-            font-size: clamp(36px, 5vw, 64px);
-            margin-bottom: 24px;
-            max-width: 900px;
-            animation: fadeInUp 0.8s ease 0.2s both;
+            font-size: clamp(32px, 4vw, 48px);
+            margin-bottom: 20px;
+            line-height: 1.15;
         }
 
-        .hero h1 span {
-            color: var(--logo-blue);
+        .hero h1 .highlight {
+            background: var(--gradient-accent);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
         }
 
         .hero-subtitle {
-            font-size: 20px;
+            font-size: 18px;
             color: var(--text-gray);
-            max-width: 700px;
-            margin-bottom: 40px;
-            animation: fadeInUp 0.8s ease 0.4s both;
-        }
-
-        .hero-stats {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 30px;
-            margin-bottom: 50px;
-            animation: fadeInUp 0.8s ease 0.6s both;
-        }
-
-        .stat-item {
-            text-align: left;
-            padding: 20px;
-            background: rgba(0, 188, 212, 0.05);
-            border-radius: 8px;
-            border-left: 3px solid var(--logo-blue);
-        }
-
-        .stat-number {
-            font-family: 'Space Grotesk', sans-serif;
-            font-size: 42px;
-            font-weight: 700;
-            color: var(--logo-blue);
-            display: block;
-            line-height: 1;
-            margin-bottom: 8px;
-        }
-
-        .stat-label {
-            font-size: 13px;
-            color: var(--text-gray);
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
+            margin-bottom: 30px;
+            line-height: 1.6;
         }
 
         .hero-cta {
             display: flex;
             flex-direction: column;
             gap: 15px;
-            animation: fadeInUp 0.8s ease 0.8s both;
         }
 
         .btn-primary {
             display: inline-flex;
             align-items: center;
+            justify-content: center;
             gap: 10px;
             padding: 18px 40px;
-            background: linear-gradient(135deg, var(--logo-blue) 0%, #00ACC1 100%);
-            color: var(--white);
+            background: var(--gradient-accent);
+            color: var(--deep-blue);
             text-decoration: none;
             font-family: 'Montserrat', sans-serif;
             font-weight: 700;
             font-size: 16px;
-            border-radius: 4px;
+            border-radius: 30px;
             transition: all 0.3s;
             border: none;
             cursor: pointer;
-            width: fit-content;
-            box-shadow: 0 4px 15px rgba(0, 188, 212, 0.3);
+            box-shadow: 0 4px 20px rgba(0, 188, 212, 0.4);
         }
 
         .btn-primary:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 10px 30px rgba(0, 188, 212, 0.4);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 40px rgba(0, 188, 212, 0.5);
         }
 
         .hero-note {
-            font-size: 14px;
+            font-size: 13px;
             color: var(--text-gray);
             display: flex;
             align-items: center;
             gap: 8px;
         }
 
-        .scroll-indicator {
-            position: absolute;
-            bottom: 40px;
-            left: 50%;
-            transform: translateX(-50%);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 10px;
-            color: var(--logo-blue);
-            font-size: 12px;
-            animation: bounce 2s infinite;
-            cursor: pointer;
+        /* Hero Stats Cards */
+        .hero-stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
         }
 
-        @keyframes bounce {
-            0%, 20%, 50%, 80%, 100% { transform: translateX(-50%) translateY(0); }
-            40% { transform: translateX(-50%) translateY(-10px); }
-            60% { transform: translateX(-50%) translateY(-5px); }
+        .stat-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(0, 188, 212, 0.2);
+            border-radius: 16px;
+            padding: 30px 20px;
+            text-align: center;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+
+        .stat-card:hover {
+            border-color: var(--logo-blue);
+            transform: translateY(-5px);
+            background: rgba(0, 188, 212, 0.05);
+        }
+
+        .stat-card-label {
+            font-size: 12px;
+            color: var(--text-gray);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+        }
+
+        .stat-card-value {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 42px;
+            font-weight: 700;
+            color: var(--logo-blue);
+            line-height: 1;
+            margin-bottom: 5px;
+        }
+
+        .stat-card-unit {
+            font-size: 14px;
+            color: var(--text-gray);
+        }
+
+        /* Hero Bottom Features */
+        .hero-bottom {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            flex-wrap: wrap;
+            padding-top: 40px;
+            border-top: 1px solid rgba(0, 188, 212, 0.1);
+        }
+
+        .hero-feature {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 15px;
+            color: var(--white);
+        }
+
+        .hero-feature i {
+            color: var(--logo-blue);
+            font-size: 18px;
         }
 
         /* Section Styles */
@@ -350,6 +376,7 @@
 
         .section-header {
             margin-bottom: 60px;
+            text-align: center;
         }
 
         .section-tag {
@@ -363,17 +390,489 @@
         }
 
         .section-title {
-            font-size: clamp(32px, 4vw, 48px);
-            margin-bottom: 20px;
+            font-size: clamp(28px, 4vw, 42px);
+            margin-bottom: 16px;
         }
 
         .section-subtitle {
             font-size: 18px;
             color: var(--text-gray);
             max-width: 600px;
+            margin: 0 auto;
         }
 
-        /* Objects Section - NEW */
+        /* Why Clients Section - NEW */
+        .why-clients {
+            background: var(--white);
+            color: var(--deep-blue);
+        }
+
+        .why-clients .section-title,
+        .why-clients .section-subtitle {
+            color: var(--deep-blue);
+        }
+
+        .why-clients .section-subtitle {
+            color: #666;
+        }
+
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 25px;
+        }
+
+        .why-item {
+            text-align: center;
+            padding: 40px 25px;
+            background: var(--light-gray);
+            border-radius: 16px;
+            transition: all 0.3s ease;
+        }
+
+        .why-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .why-icon {
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, rgba(0, 188, 212, 0.1) 0%, rgba(100, 255, 218, 0.1) 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            color: var(--logo-blue);
+            font-size: 28px;
+        }
+
+        .why-title {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: var(--deep-blue);
+        }
+
+        .why-desc {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.5;
+        }
+
+        /* Market Growth Section - NEW */
+        .market-growth {
+            background: var(--deep-blue);
+        }
+
+        .market-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .market-text h3 {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        .market-text h3 span {
+            color: var(--logo-blue);
+        }
+
+        .market-text p {
+            font-size: 16px;
+            color: var(--text-gray);
+            line-height: 1.7;
+            margin-bottom: 30px;
+        }
+
+        .market-stats {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .market-stat {
+            background: rgba(0, 188, 212, 0.05);
+            border: 1px solid rgba(0, 188, 212, 0.2);
+            border-radius: 12px;
+            padding: 25px;
+            text-align: center;
+        }
+
+        .market-stat-value {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 36px;
+            font-weight: 700;
+            color: var(--logo-blue);
+            margin-bottom: 5px;
+        }
+
+        .market-stat-label {
+            font-size: 13px;
+            color: var(--text-gray);
+        }
+
+        .market-chart {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(0, 188, 212, 0.2);
+            border-radius: 20px;
+            padding: 40px;
+        }
+
+        .chart-title {
+            font-size: 14px;
+            color: var(--text-gray);
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .chart-bars {
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            height: 200px;
+            gap: 15px;
+        }
+
+        .chart-bar {
+            flex: 1;
+            background: linear-gradient(to top, var(--logo-blue), rgba(0, 188, 212, 0.3));
+            border-radius: 8px 8px 0 0;
+            position: relative;
+            transition: all 0.3s;
+        }
+
+        .chart-bar:hover {
+            opacity: 0.8;
+        }
+
+        .chart-bar-label {
+            position: absolute;
+            bottom: -25px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 12px;
+            color: var(--text-gray);
+        }
+
+        .chart-bar-value {
+            position: absolute;
+            top: -25px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 12px;
+            color: var(--logo-blue);
+            font-weight: 600;
+        }
+
+        /* Company Stats Section - NEW */
+        .company-stats {
+            background: var(--gradient-dark);
+            padding: 80px 0;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+        }
+
+        .company-stat {
+            text-align: center;
+            padding: 30px;
+        }
+
+        .company-stat-number {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 56px;
+            font-weight: 700;
+            color: var(--logo-blue);
+            line-height: 1;
+            margin-bottom: 10px;
+        }
+
+        .company-stat-label {
+            font-size: 14px;
+            color: var(--text-gray);
+        }
+
+        /* Financial Model Section */
+        .financial-model {
+            background: var(--white);
+            color: var(--deep-blue);
+        }
+
+        .financial-model .section-title,
+        .financial-model .section-subtitle {
+            color: var(--deep-blue);
+        }
+
+        .financial-model .section-subtitle {
+            color: #666;
+        }
+
+        .scenarios-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+
+        .scenario-card {
+            background: var(--light-gray);
+            border-radius: 20px;
+            padding: 40px 30px;
+            text-align: center;
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+        }
+
+        .scenario-card:hover {
+            border-color: var(--logo-blue);
+            transform: translateY(-5px);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
+        }
+
+        .scenario-card.popular {
+            border-color: var(--logo-blue);
+            background: linear-gradient(135deg, #f0f9ff 0%, #e0f7fa 100%);
+            position: relative;
+        }
+
+        .scenario-card.popular::before {
+            content: 'ПОПУЛЯРНЫЙ';
+            position: absolute;
+            top: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--logo-blue);
+            color: white;
+            padding: 5px 20px;
+            border-radius: 20px;
+            font-size: 10px;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        .scenario-load {
+            font-size: 14px;
+            color: #666;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 15px;
+        }
+
+        .scenario-profit {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 42px;
+            font-weight: 700;
+            color: var(--deep-blue);
+            margin-bottom: 8px;
+        }
+
+        .scenario-payback {
+            font-size: 16px;
+            color: var(--logo-blue);
+            font-weight: 600;
+        }
+
+        /* Advantages Section - NEW */
+        .advantages {
+            background: var(--graphite);
+        }
+
+        .advantages-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .advantage-card {
+            background: rgba(10, 25, 47, 0.5);
+            border: 1px solid rgba(0, 188, 212, 0.1);
+            border-radius: 16px;
+            padding: 35px 30px;
+            transition: all 0.3s ease;
+        }
+
+        .advantage-card:hover {
+            border-color: var(--logo-blue);
+            transform: translateY(-3px);
+        }
+
+        .advantage-number {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 48px;
+            font-weight: 700;
+            color: rgba(0, 188, 212, 0.2);
+            line-height: 1;
+            margin-bottom: 15px;
+        }
+
+        .advantage-title {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 12px;
+            color: var(--white);
+        }
+
+        .advantage-desc {
+            font-size: 14px;
+            color: var(--text-gray);
+            line-height: 1.6;
+        }
+
+        /* Cases Section - NEW */
+        .cases {
+            background: var(--white);
+            color: var(--deep-blue);
+        }
+
+        .cases .section-title,
+        .cases .section-subtitle {
+            color: var(--deep-blue);
+        }
+
+        .cases .section-subtitle {
+            color: #666;
+        }
+
+        .cases-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .case-card {
+            background: var(--light-gray);
+            border-radius: 20px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .case-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+        }
+
+        .case-image {
+            height: 180px;
+            background: linear-gradient(135deg, #1D2D44 0%, #0A192F 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--logo-blue);
+            font-size: 48px;
+        }
+
+        .case-content {
+            padding: 30px;
+        }
+
+        .case-location {
+            font-size: 12px;
+            color: var(--logo-blue);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .case-city {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: var(--deep-blue);
+        }
+
+        .case-date {
+            font-size: 13px;
+            color: var(--logo-blue);
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .case-metrics {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+
+        .case-metric {
+            text-align: center;
+        }
+
+        .case-metric-value {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--deep-blue);
+        }
+
+        .case-metric-label {
+            font-size: 12px;
+            color: #666;
+        }
+
+        /* What You Get Section - NEW */
+        .what-you-get {
+            background: var(--deep-blue);
+        }
+
+        .get-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .get-column {
+            background: rgba(0, 188, 212, 0.05);
+            border: 1px solid rgba(0, 188, 212, 0.1);
+            border-radius: 16px;
+            padding: 35px 30px;
+        }
+
+        .get-column-title {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 25px;
+            color: var(--logo-blue);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .get-list {
+            list-style: none;
+        }
+
+        .get-list li {
+            padding: 12px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            font-size: 14px;
+            color: var(--text-gray);
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+
+        .get-list li:last-child {
+            border-bottom: none;
+        }
+
+        .get-list li i {
+            color: var(--logo-blue);
+            margin-top: 3px;
+            font-size: 12px;
+        }
+
+        /* Objects Section - UNCHANGED */
         .objects {
             background: var(--white);
             color: var(--deep-blue);
@@ -392,7 +891,7 @@
 
         .object-card {
             background: var(--light-gray);
-            border-radius: 12px;
+            border-radius: 16px;
             overflow: hidden;
             border: 1px solid rgba(0, 188, 212, 0.2);
             transition: all 0.3s ease;
@@ -400,14 +899,14 @@
 
         .object-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
             border-color: var(--logo-blue);
         }
 
         .object-slider {
             position: relative;
             width: 100%;
-            height: 280px;
+            height: 260px;
             overflow: hidden;
             background: var(--graphite);
         }
@@ -431,27 +930,6 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
-        }
-
-        .object-slide-placeholder {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            color: var(--text-gray);
-            gap: 15px;
-        }
-
-        .object-slide-placeholder i {
-            font-size: 48px;
-            color: var(--logo-blue);
-            opacity: 0.5;
-        }
-
-        .object-slide-placeholder span {
-            font-size: 14px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
         }
 
         .slider-btn {
@@ -524,11 +1002,11 @@
             text-transform: uppercase;
             letter-spacing: 1px;
             font-weight: 600;
-            margin-bottom: 10px;
+            margin-bottom: 8px;
         }
 
         .object-name {
-            font-size: 20px;
+            font-size: 18px;
             font-weight: 700;
             color: var(--deep-blue);
             margin-bottom: 8px;
@@ -542,313 +1020,9 @@
             gap: 8px;
         }
 
-        .object-badge {
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
-            margin-top: 15px;
-            padding: 6px 12px;
-            background: rgba(0, 188, 212, 0.1);
-            border-radius: 20px;
-            font-size: 12px;
-            color: var(--deep-blue);
-            font-weight: 500;
-        }
-
-        .object-badge i {
-            color: var(--logo-blue);
-        }
-
-        /* Market Section */
-        .market {
-            background: var(--deep-blue);
-        }
-
-        .market-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 30px;
-        }
-
-        .market-card {
-            padding: 40px;
-            background: rgba(0, 188, 212, 0.05);
-            border-radius: 8px;
-            border-left: 4px solid var(--logo-blue);
-            transition: transform 0.3s;
-        }
-
-        .market-card:hover {
-            transform: translateY(-5px);
-        }
-
-        .market-number {
-            font-family: 'Space Grotesk', sans-serif;
-            font-size: 56px;
-            font-weight: 700;
-            color: var(--logo-blue);
-            margin-bottom: 10px;
-        }
-
-        .market-label {
-            font-size: 16px;
-            color: var(--white);
-            font-weight: 600;
-        }
-
-        .market-desc {
-            font-size: 14px;
-            color: var(--text-gray);
-            margin-top: 10px;
-        }
-
-        /* Comparison Section */
-        .comparison {
-            background: var(--graphite);
-        }
-
-        .comparison-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 30px;
-        }
-
-        .comparison-card {
-            padding: 40px;
-            background: rgba(255, 255, 255, 0.02);
-            border: 1px solid rgba(0, 188, 212, 0.1);
-            border-radius: 8px;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .comparison-card.featured {
-            background: rgba(0, 188, 212, 0.08);
-            border-color: var(--logo-blue);
-            transform: scale(1.05);
-            box-shadow: 0 10px 40px rgba(0, 188, 212, 0.15);
-        }
-
-        .comparison-card.featured::before {
-            content: 'НАШЕ РЕШЕНИЕ';
-            position: absolute;
-            top: 0;
-            right: 0;
-            background: var(--logo-blue);
-            color: var(--white);
-            padding: 5px 15px;
-            font-size: 10px;
-            font-weight: 700;
-            border-bottom-left-radius: 8px;
-        }
-
-        .comparison-title {
-            font-size: 24px;
-            margin-bottom: 20px;
-            color: var(--white);
-        }
-
-        .comparison-card.featured .comparison-title {
-            color: var(--logo-blue);
-        }
-
-        .comparison-list {
-            list-style: none;
-            margin-bottom: 30px;
-        }
-
-        .comparison-list li {
-            padding: 10px 0;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-            font-size: 14px;
-            color: var(--text-gray);
-            display: flex;
-            align-items: flex-start;
-            gap: 10px;
-        }
-
-        .comparison-list li::before {
-            content: '•';
-            color: var(--logo-blue);
-            font-weight: bold;
-        }
-
-        .comparison-metric {
-            font-family: 'Space Grotesk', sans-serif;
-            font-size: 36px;
-            font-weight: 700;
-        }
-
-        .comparison-card.featured .comparison-metric {
-            color: var(--logo-blue);
-        }
-
-        .comparison-card:not(.featured) .comparison-metric {
-            color: #ff6b6b;
-        }
-
-        /* Economics Section */
-        .economics {
-            background: var(--deep-blue);
-        }
-
-        .economics-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 60px;
-            margin-bottom: 60px;
-        }
-
-        .investment-block {
-            background: rgba(10, 25, 47, 0.5);
-            padding: 40px;
-            border-radius: 8px;
-            border: 1px solid rgba(0, 188, 212, 0.2);
-        }
-
-        .investment-title {
-            font-size: 24px;
-            margin-bottom: 30px;
-            color: var(--logo-blue);
-        }
-
-        .investment-item {
-            display: flex;
-            justify-content: space-between;
-            padding: 15px 0;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-            font-size: 16px;
-        }
-
-        .investment-item.total {
-            border-top: 2px solid var(--logo-blue);
-            border-bottom: none;
-            margin-top: 20px;
-            padding-top: 20px;
-            font-weight: 700;
-            font-size: 24px;
-            color: var(--logo-blue);
-        }
-
-        .table-container {
-            overflow-x: auto;
-        }
-
-        .data-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px;
-        }
-
-        .data-table th,
-        .data-table td {
-            padding: 15px;
-            text-align: left;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-        }
-
-        .data-table th {
-            color: var(--logo-blue);
-            font-weight: 600;
-            font-size: 12px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        .data-table td {
-            font-size: 16px;
-        }
-
-        .data-table .highlight {
-            color: var(--logo-blue);
-            font-weight: 700;
-        }
-
-        .scenarios {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 30px;
-            margin-top: 60px;
-        }
-
-        .scenario-card {
-            background: rgba(10, 25, 47, 0.5);
-            padding: 30px;
-            border-radius: 8px;
-            border-top: 4px solid var(--logo-blue);
-            transition: transform 0.3s;
-        }
-
-        .scenario-card:hover {
-            transform: translateY(-5px);
-        }
-
-        .scenario-card.middle {
-            background: rgba(0, 188, 212, 0.1);
-            border-top-width: 6px;
-        }
-
-        .scenario-title {
-            font-size: 18px;
-            margin-bottom: 20px;
-            color: var(--logo-blue);
-        }
-
-        .scenario-metric {
-            margin-bottom: 15px;
-        }
-
-        .scenario-label {
-            font-size: 12px;
-            color: var(--text-gray);
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            margin-bottom: 5px;
-        }
-
-        .scenario-value {
-            font-family: 'Space Grotesk', sans-serif;
-            font-size: 28px;
-            font-weight: 700;
-            color: var(--white);
-        }
-
-        .economics-summary {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 30px;
-            margin-top: 60px;
-            padding-top: 60px;
-            border-top: 1px solid rgba(0, 188, 212, 0.2);
-        }
-
-        .summary-item {
-            text-align: center;
-        }
-
-        .summary-number {
-            font-family: 'Space Grotesk', sans-serif;
-            font-size: 48px;
-            font-weight: 700;
-            color: var(--logo-blue);
-            display: block;
-        }
-
-        .summary-label {
-            font-size: 14px;
-            color: var(--text-gray);
-            margin-top: 10px;
-        }
-
-        /* Locations Section */
+        /* Locations Section - UNCHANGED */
         .locations {
-            background: var(--white);
-            color: var(--deep-blue);
-        }
-
-        .locations .section-title,
-        .locations .section-subtitle {
-            color: var(--deep-blue);
+            background: var(--graphite);
         }
 
         .locations-stats {
@@ -861,20 +1035,21 @@
         .location-stat {
             text-align: center;
             padding: 30px;
-            background: var(--light-gray);
-            border-radius: 8px;
+            background: rgba(0, 188, 212, 0.05);
+            border-radius: 12px;
+            border: 1px solid rgba(0, 188, 212, 0.1);
         }
 
         .location-stat-number {
             font-family: 'Space Grotesk', sans-serif;
-            font-size: 48px;
+            font-size: 42px;
             font-weight: 700;
-            color: var(--deep-blue);
+            color: var(--logo-blue);
         }
 
         .location-stat-label {
             font-size: 14px;
-            color: #666;
+            color: var(--text-gray);
             margin-top: 10px;
         }
 
@@ -886,9 +1061,9 @@
 
         .location-item {
             padding: 30px;
-            background: var(--light-gray);
-            border-radius: 8px;
-            border-left: 4px solid var(--logo-blue);
+            background: rgba(0, 188, 212, 0.05);
+            border-radius: 12px;
+            border-left: 3px solid var(--logo-blue);
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -897,11 +1072,11 @@
 
         .location-item:hover {
             transform: translateX(10px);
-            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            background: rgba(0, 188, 212, 0.08);
         }
 
         .location-info h3 {
-            font-size: 20px;
+            font-size: 18px;
             margin-bottom: 10px;
         }
 
@@ -909,130 +1084,58 @@
             display: flex;
             gap: 20px;
             font-size: 14px;
-            color: #666;
+            color: var(--text-gray);
         }
 
         .location-badge {
             background: var(--logo-blue);
             color: var(--white);
-            padding: 5px 15px;
+            padding: 6px 16px;
             border-radius: 20px;
-            font-size: 12px;
+            font-size: 11px;
             font-weight: 700;
-        }
-
-        /* Risks Section */
-        .risks {
-            background: var(--deep-blue);
-        }
-
-        .risks-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 30px;
-        }
-
-        .risk-card {
-            padding: 40px;
-            background: rgba(255, 255, 255, 0.02);
-            border: 1px solid rgba(0, 188, 212, 0.1);
-            border-radius: 8px;
-            position: relative;
-        }
-
-        .risk-header {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-            margin-bottom: 20px;
-        }
-
-        .risk-icon {
-            width: 50px;
-            height: 50px;
-            background: rgba(255, 107, 107, 0.1);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #ff6b6b;
-            font-size: 20px;
-        }
-
-        .risk-title {
-            font-size: 20px;
-            color: #ff6b6b;
-        }
-
-        .risk-solution {
-            background: rgba(0, 188, 212, 0.05);
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 3px solid var(--logo-blue);
-        }
-
-        .risk-solution-label {
-            font-size: 12px;
-            color: var(--logo-blue);
             text-transform: uppercase;
             letter-spacing: 1px;
-            margin-bottom: 10px;
+        }
+
+        .location-badge.urgent {
+            background: linear-gradient(135deg, #ff6b6b 0%, #ee5a5a 100%);
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+
+        .hot-badge {
+            background: linear-gradient(135deg, #ff6b6b 0%, #ee5a5a 100%);
+            color: white;
+            padding: 3px 10px;
+            border-radius: 12px;
+            font-size: 10px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-left: 8px;
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .location-urgency {
+            font-size: 12px;
+            color: #ff6b6b;
+            margin-top: 8px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
             font-weight: 600;
         }
 
-        .risk-solution p {
-            color: var(--text-gray);
-            font-size: 14px;
-            line-height: 1.6;
-        }
-
-        /* Support Section */
-        .support {
-            background: var(--graphite);
-        }
-
-        .support-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 30px;
-        }
-
-        .support-card {
-            padding: 40px;
-            background: rgba(10, 25, 47, 0.5);
-            border-radius: 8px;
-            text-align: center;
-            transition: all 0.3s;
-            border: 1px solid transparent;
-        }
-
-        .support-card:hover {
-            border-color: var(--logo-blue);
-            transform: translateY(-5px);
-        }
-
-        .support-icon {
-            width: 80px;
-            height: 80px;
-            background: rgba(0, 188, 212, 0.1);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto 20px;
-            color: var(--logo-blue);
-            font-size: 32px;
-        }
-
-        .support-title {
-            font-size: 20px;
-            margin-bottom: 15px;
-        }
-
-        .support-desc {
-            font-size: 14px;
-            color: var(--text-gray);
-            line-height: 1.6;
+        .location-item.hot {
+            border-left-color: #ff6b6b;
+            background: rgba(255, 107, 107, 0.08);
         }
 
         /* CTA Section */
@@ -1040,6 +1143,7 @@
             background: var(--gradient-dark);
             position: relative;
             overflow: hidden;
+            padding: 100px 0;
         }
 
         .cta::before {
@@ -1049,8 +1153,8 @@
             left: -50%;
             width: 200%;
             height: 200%;
-            background: radial-gradient(circle, rgba(0, 188, 212, 0.08) 0%, transparent 70%);
-            animation: rotate 20s linear infinite;
+            background: radial-gradient(circle, rgba(0, 188, 212, 0.1) 0%, transparent 60%);
+            animation: rotate 25s linear infinite;
         }
 
         @keyframes rotate {
@@ -1061,26 +1165,26 @@
         .cta-content {
             position: relative;
             z-index: 2;
-            max-width: 800px;
+            max-width: 600px;
             margin: 0 auto;
             text-align: center;
         }
 
         .cta h2 {
-            font-size: clamp(32px, 4vw, 48px);
-            margin-bottom: 20px;
+            font-size: clamp(28px, 4vw, 40px);
+            margin-bottom: 15px;
         }
 
         .cta-subtitle {
-            font-size: 18px;
+            font-size: 16px;
             color: var(--text-gray);
             margin-bottom: 40px;
         }
 
         .form-container {
             background: rgba(255, 255, 255, 0.05);
-            padding: 50px;
-            border-radius: 8px;
+            padding: 40px;
+            border-radius: 20px;
             border: 1px solid rgba(0, 188, 212, 0.2);
             backdrop-filter: blur(10px);
         }
@@ -1098,20 +1202,18 @@
             font-weight: 500;
         }
 
-        .form-group input,
-        .form-group select {
+        .form-group input {
             width: 100%;
-            padding: 15px;
+            padding: 16px 20px;
             background: rgba(255, 255, 255, 0.05);
             border: 1px solid rgba(0, 188, 212, 0.2);
-            border-radius: 4px;
+            border-radius: 12px;
             color: var(--white);
             font-size: 16px;
             transition: all 0.3s;
         }
 
-        .form-group input:focus,
-        .form-group select:focus {
+        .form-group input:focus {
             outline: none;
             border-color: var(--logo-blue);
             background: rgba(0, 188, 212, 0.05);
@@ -1126,22 +1228,22 @@
         .btn-submit {
             width: 100%;
             padding: 18px;
-            background: linear-gradient(135deg, var(--logo-blue) 0%, #00ACC1 100%);
-            color: var(--white);
+            background: var(--gradient-accent);
+            color: var(--deep-blue);
             border: none;
-            border-radius: 4px;
+            border-radius: 30px;
             font-family: 'Montserrat', sans-serif;
             font-weight: 700;
             font-size: 16px;
             cursor: pointer;
             transition: all 0.3s;
             margin-top: 10px;
-            box-shadow: 0 4px 15px rgba(0, 188, 212, 0.3);
+            box-shadow: 0 4px 20px rgba(0, 188, 212, 0.4);
         }
 
         .btn-submit:hover {
             transform: translateY(-2px);
-            box-shadow: 0 10px 30px rgba(0, 188, 212, 0.4);
+            box-shadow: 0 10px 30px rgba(0, 188, 212, 0.5);
         }
 
         .btn-submit:disabled {
@@ -1153,7 +1255,7 @@
         .form-status {
             margin-top: 15px;
             padding: 15px;
-            border-radius: 4px;
+            border-radius: 12px;
             display: none;
             font-size: 14px;
         }
@@ -1187,10 +1289,22 @@
             color: var(--text-gray);
             text-decoration: none;
             transition: color 0.3s;
+            font-size: 15px;
         }
 
         .contact-item:hover {
             color: var(--logo-blue);
+        }
+
+        .policy-text {
+            margin-top: 15px;
+            font-size: 12px;
+            color: var(--text-gray);
+        }
+
+        .policy-text a {
+            color: var(--logo-blue);
+            text-decoration: underline;
         }
 
         /* Footer */
@@ -1231,9 +1345,9 @@
             display: inline-block;
             width: 20px;
             height: 20px;
-            border: 3px solid rgba(255,255,255,.3);
+            border: 3px solid rgba(10, 25, 47, 0.3);
             border-radius: 50%;
-            border-top-color: var(--white);
+            border-top-color: var(--deep-blue);
             animation: spin 1s ease-in-out infinite;
             margin-right: 10px;
         }
@@ -1264,12 +1378,41 @@
                 display: block;
             }
 
+            .hero-top {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
             .hero-stats {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-bottom {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .why-grid {
                 grid-template-columns: repeat(2, 1fr);
             }
 
-            .stat-number {
-                font-size: 32px;
+            .market-content {
+                grid-template-columns: 1fr;
+            }
+
+            .market-chart {
+                order: -1;
+            }
+
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .scenarios-grid,
+            .cases-grid,
+            .advantages-grid,
+            .get-grid {
+                grid-template-columns: 1fr;
             }
 
             .objects-grid {
@@ -1277,23 +1420,13 @@
             }
 
             .object-slider {
-                height: 240px;
+                height: 220px;
             }
 
-            .market-grid,
-            .comparison-grid,
-            .scenarios,
-            .economics-summary,
             .locations-stats {
-                grid-template-columns: 1fr;
+                grid-template-columns: repeat(2, 1fr);
             }
 
-            .economics-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .risks-grid,
-            .support-grid,
             .locations-list {
                 grid-template-columns: 1fr;
             }
@@ -1302,51 +1435,46 @@
                 grid-template-columns: 1fr;
             }
 
-            .comparison-card.featured {
-                transform: none;
-            }
-
-            .scenario-card.middle {
-                order: -1;
-            }
-
             .form-container {
                 padding: 30px 20px;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .hero-stats {
-                grid-template-columns: 1fr;
-            }
-
-            .stat-number {
-                font-size: 36px;
-            }
-
-            .economics-summary {
-                grid-template-columns: repeat(2, 1fr);
-            }
-
-            .summary-number {
-                font-size: 32px;
             }
 
             .nav-phone {
                 display: none;
             }
-
-            .object-slider {
-                height: 200px;
-            }
         }
 
-        /* Utility Classes */
-        .text-accent { color: var(--logo-blue); }
-        .text-center { text-align: center; }
-        .mb-20 { margin-bottom: 20px; }
-        .mb-40 { margin-bottom: 40px; }
+        @media (max-width: 480px) {
+            .why-grid,
+            .stats-grid,
+            .locations-stats {
+                grid-template-columns: 1fr;
+            }
+
+            .object-slider {
+                height: 180px;
+            }
+
+            .hero-stats {
+                gap: 15px;
+            }
+
+            .stat-card {
+                padding: 25px 15px;
+            }
+
+            .stat-card-value {
+                font-size: 36px;
+            }
+
+            .btn-primary {
+                padding: 16px 25px;
+                font-size: 15px;
+                width: 100%;
+            }
+        }
     </style>
+<base target="_blank">
 <base target="_blank">
 </head>
 <body>
@@ -1359,11 +1487,11 @@
                 ЧИСТАЯ АУРА
             </a>
             <ul class="nav-links" id="navLinks">
+                <li><a href="#why-clients">Преимущества</a></li>
+                <li><a href="#financial-model">Доходность</a></li>
+                <li><a href="#cases">Кейсы</a></li>
                 <li><a href="#objects">Объекты</a></li>
-                <li><a href="#market">Рынок</a></li>
-                <li><a href="#economics">Экономика</a></li>
-                <li><a href="#locations">Локации</a></li>
-                <li><a href="#support">Поддержка</a></li>
+                <li><a href="#contact">Контакты</a></li>
             </ul>
             <a href="tel:+79836020102" class="nav-phone">
                 <i class="fas fa-phone"></i>
@@ -1375,65 +1503,410 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- Hero Section - NEW DESIGN -->
     <section class="hero" id="hero">
         <div class="hero-grid"></div>
         <div class="hero-content">
-            <div class="hero-badge">
-                <i class="fas fa-check-circle"></i>
-                Федеральная сеть робомоек
-            </div>
-            <h1>Запустите робомойку за 6,5 млн ₽<br>и получайте пассивный доход от 420 тыс ₽/мес</h1>
-            <p class="hero-subtitle">Окупаемость 12–18 месяцев • 30+ работающих объектов по России<br>
-    •Без персонала и текучки • Полный запуск под ключ за 30 дней
-              <br> <strong>Уже готовы 6 локаций с высоким трафиком и чистой арендой —</strong><br>
-    главная боль бизнеса решена, выбирайте и запускайтесь
-  </p>.</p>
-            
-            <div class="hero-stats">
-                <div class="stat-item">
-                    <span class="stat-number number-font" data-target="12">0</span>
-                    <span class="stat-label">мес окупаемость</span>
+            <div class="hero-top">
+                <div class="hero-left">
+                    <div class="hero-badge">
+                        <i class="fas fa-check-circle"></i>
+                        Федеральная сеть робомоек
+                    </div>
+                    <h1>Откройте робот-мойку за 30 дней и зарабатывайте <span class="highlight">от 420 000 ₽ в месяц с одного поста</span></h1>
+                    <p class="hero-subtitle">Бизнес 24/7 без персонала с удалённым управлением. Инвестиции от 6,5 млн ₽. Окупаемость 12–18 месяцев.</p>
+                    <div class="hero-cta">
+                        <a href="#contact" class="btn-primary">
+                            Получить бизнес-план
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <div class="hero-note">
+                            <i class="fas fa-file-pdf"></i>
+                            PDF с финансовой моделью за 2 минуты
+                        </div>
+                    </div>
                 </div>
-                <div class="stat-item">
-                    <span class="stat-number number-font" data-target="80">0</span>
-                    <span class="stat-label">% доходность</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number number-font" data-target="6.5">0</span>
-                    <span class="stat-label">млн ₽ вход</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number number-font" data-target="30">0</span>
-                    <span class="stat-label">+ объектов</span>
+
+                <div class="hero-stats">
+                    <div class="stat-card animate-on-scroll">
+                        <div class="stat-card-label">Окупаемость</div>
+                        <div class="stat-card-value">12–18</div>
+                        <div class="stat-card-unit">месяцев</div>
+                    </div>
+                    <div class="stat-card animate-on-scroll">
+                        <div class="stat-card-label">Инвестиции от</div>
+                        <div class="stat-card-value">6,5</div>
+                        <div class="stat-card-unit">млн ₽</div>
+                    </div>
+                    <div class="stat-card animate-on-scroll">
+                        <div class="stat-card-label">Роялти</div>
+                        <div class="stat-card-value">0%</div>
+                        <div class="stat-card-unit">никаких %</div>
+                    </div>
                 </div>
             </div>
 
-            <div class="hero-cta">
-                <a href="#contact" class="btn-primary">
-                    Выбрать локацию и получить расчёт бесплатно 
-                    <i class="fas fa-arrow-right"></i>
-                </a>
-                <div class="hero-note">
-                    <i class="fas fa-file-pdf"></i>
-                    PDF с финансовой моделью, планом запуска и списком 6 готовых локаций
+            <div class="hero-bottom">
+                <div class="hero-feature">
+                    <i class="fas fa-check-circle"></i>
+                    <span>30+ работающих объектов</span>
+                </div>
+                <div class="hero-feature">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Реальная финансовая модель</span>
+                </div>
+                <div class="hero-feature">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Подбор локации под ключ</span>
                 </div>
             </div>
-        </div>
-        
-        <div class="scroll-indicator" onclick="document.getElementById('objects').scrollIntoView({behavior: 'smooth'})">
-            <span>Узнать больше</span>
-            <i class="fas fa-chevron-down"></i>
         </div>
     </section>
 
-    <!-- Objects Section - NEW -->
+    <!-- Why Clients Section - NEW -->
+    <section class="why-clients" id="why-clients">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag" style="color: var(--deep-blue); opacity: 0.6;">Продукт</span>
+                <h2 class="section-title">Почему клиенты выбирают робот-мойки?</h2>
+                <p class="section-subtitle">Мы создали формат, который экономит время и деньги автовладельцев</p>
+            </div>
+
+            <div class="why-grid">
+                <div class="why-item animate-on-scroll">
+                    <div class="why-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <div class="why-title">Быстро</div>
+                    <div class="why-desc">5–7 минут занимает одна мойка</div>
+                </div>
+
+                <div class="why-item animate-on-scroll">
+                    <div class="why-icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <div class="why-title">Удобно</div>
+                    <div class="why-desc">Не нужно выходить из машины</div>
+                </div>
+
+                <div class="why-item animate-on-scroll">
+                    <div class="why-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="why-title">Безопасно</div>
+                    <div class="why-desc">Без контакта с поверхностью авто</div>
+                </div>
+
+                <div class="why-item animate-on-scroll">
+                    <div class="why-icon">
+                        <i class="fas fa-ruble-sign"></i>
+                    </div>
+                    <div class="why-title">Выгодно</div>
+                    <div class="why-desc">Стоимость от 300 ₽ за мойку</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Market Growth Section - NEW -->
+    <section class="market-growth" id="market">
+        <div class="container">
+            <div class="market-content">
+                <div class="market-text animate-on-scroll">
+                    <h3>Легче зарабатывать на <span>растущем рынке</span></h3>
+                    <p>Потенциальная ёмкость рынка робот-моек в России оценивается в 18,2 млрд рублей — в 3 раза больше текущего объёма. Отрасль растёт на 10,4% в год.</p>
+                    <div class="market-stats">
+                        <div class="market-stat">
+                            <div class="market-stat-value">18,2</div>
+                            <div class="market-stat-label">млрд ₽ потенциал</div>
+                        </div>
+                        <div class="market-stat">
+                            <div class="market-stat-value">×3</div>
+                            <div class="market-stat-label">рост возможностей</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="market-chart animate-on-scroll">
+                    <div class="chart-title">Динамика рынка робот-моек, млрд ₽</div>
+                    <div class="chart-bars">
+                        <div class="chart-bar" style="height: 30%;">
+                            <div class="chart-bar-value">2,1</div>
+                            <div class="chart-bar-label">2018</div>
+                        </div>
+                        <div class="chart-bar" style="height: 45%;">
+                            <div class="chart-bar-value">3,2</div>
+                            <div class="chart-bar-label">2020</div>
+                        </div>
+                        <div class="chart-bar" style="height: 60%;">
+                            <div class="chart-bar-value">4,5</div>
+                            <div class="chart-bar-label">2022</div>
+                        </div>
+                        <div class="chart-bar" style="height: 80%;">
+                            <div class="chart-bar-value">6,0</div>
+                            <div class="chart-bar-label">2024</div>
+                        </div>
+                        <div class="chart-bar" style="height: 100%;">
+                            <div class="chart-bar-value">18,2</div>
+                            <div class="chart-bar-label">2028</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Company Stats Section - NEW -->
+    <section class="company-stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="company-stat animate-on-scroll">
+                    <div class="company-stat-number">30+</div>
+                    <div class="company-stat-label">моек в сети</div>
+                </div>
+                <div class="company-stat animate-on-scroll">
+                    <div class="company-stat-number">50K</div>
+                    <div class="company-stat-label">авто моем ежемесячно</div>
+                </div>
+                <div class="company-stat animate-on-scroll">
+                    <div class="company-stat-number">6</div>
+                    <div class="company-stat-label">горячих локаций</div>
+                </div>
+                <div class="company-stat animate-on-scroll">
+                    <div class="company-stat-number">30</div>
+                    <div class="company-stat-label">дней до запуска</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Financial Model Section -->
+    <section class="financial-model" id="financial-model">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag" style="color: var(--deep-blue); opacity: 0.6;">Финансовая модель</span>
+                <h2 class="section-title">Сколько можно заработать?</h2>
+                <p class="section-subtitle">Реальные цифры на основе работающих объектов</p>
+            </div>
+
+            <div class="scenarios-grid">
+                <div class="scenario-card animate-on-scroll">
+                    <div class="scenario-load">60 авто/день</div>
+                    <div class="scenario-profit">420 000 ₽</div>
+                    <div class="scenario-payback">Окупаемость: 15–18 мес</div>
+                </div>
+
+                <div class="scenario-card popular animate-on-scroll">
+                    <div class="scenario-load">90 авто/день</div>
+                    <div class="scenario-profit">750 000 ₽</div>
+                    <div class="scenario-payback">Окупаемость: 12–14 мес</div>
+                </div>
+
+                <div class="scenario-card animate-on-scroll">
+                    <div class="scenario-load">120 авто/день</div>
+                    <div class="scenario-profit">1 100 000 ₽</div>
+                    <div class="scenario-payback">Окупаемость: 10–12 мес</div>
+                </div>
+            </div>
+
+            <div style="text-align: center;">
+                <a href="#contact" class="btn-primary animate-on-scroll">
+                    Получить расчёт для моего города
+                    <i class="fas fa-calculator"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Advantages Section - NEW -->
+    <section class="advantages" id="advantages">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">Преимущества</span>
+                <h2 class="section-title">Чем «Чистая Аура» отличается от других?</h2>
+            </div>
+
+            <div class="advantages-grid">
+                <div class="advantage-card animate-on-scroll">
+                    <div class="advantage-number">01</div>
+                    <div class="advantage-title">Низкий порог входа</div>
+                    <div class="advantage-desc">Инвестиции от 6,5 млн ₽ — в 2 раза меньше, чем у крупных сетей. Нет роялти.</div>
+                </div>
+
+                <div class="advantage-card animate-on-scroll">
+                    <div class="advantage-number">02</div>
+                    <div class="advantage-title">Быстрый запуск</div>
+                    <div class="advantage-desc">От подписания договора до первой мойки — всего 30 дней. Готовые локации.</div>
+                </div>
+
+                <div class="advantage-card animate-on-scroll">
+                    <div class="advantage-number">03</div>
+                    <div class="advantage-title">Полная автоматизация</div>
+                    <div class="advantage-desc">Работа 24/7 без персонала. Удалённый контроль через приложение.</div>
+                </div>
+
+                <div class="advantage-card animate-on-scroll">
+                    <div class="advantage-number">04</div>
+                    <div class="advantage-title">Проверенное оборудование</div>
+                    <div class="advantage-desc">Роботы с 18 форсунками, сушка, мойка днища. Гарантия 2 года.</div>
+                </div>
+
+                <div class="advantage-card animate-on-scroll">
+                    <div class="advantage-number">05</div>
+                    <div class="advantage-title">Поддержка 24/7</div>
+                    <div class="advantage-desc">Персональный менеджер, техническая поддержка, обучение персонала.</div>
+                </div>
+
+                <div class="advantage-card animate-on-scroll">
+                    <div class="advantage-number">06</div>
+                    <div class="advantage-title">Маркетинг под ключ</div>
+                    <div class="advantage-desc">ГЕОсервисы, таргет, контекст, SMM. База креативов и материалов.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cases Section - NEW -->
+    <section class="cases" id="cases">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag" style="color: var(--deep-blue); opacity: 0.6;">Кейсы</span>
+                <h2 class="section-title">Реальные цифры наших объектов</h2>
+                <p class="section-subtitle">Результаты работающих робот-моек</p>
+            </div>
+
+            <div class="cases-grid">
+                <div class="case-card animate-on-scroll">
+                    <div class="case-image">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="case-content">
+                        <div class="case-location">Владикавказ</div>
+                        <div class="case-city">ул. Грибоедова, 2</div>
+                        <div class="case-date"><i class="fas fa-calendar-alt"></i> Запуск: 03.2024</div>
+                        <div class="case-metrics">
+                            <div class="case-metric">
+                                <div class="case-metric-value">~500K</div>
+                                <div class="case-metric-label">₽/мес прибыль</div>
+                            </div>
+                            <div class="case-metric">
+                                <div class="case-metric-value">14</div>
+                                <div class="case-metric-label">мес окупаемость</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="case-card animate-on-scroll">
+                    <div class="case-image">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="case-content">
+                        <div class="case-location">Волгоград</div>
+                        <div class="case-city">Жигулёвская база</div>
+                        <div class="case-date"><i class="fas fa-calendar-alt"></i> Запуск: 12.2024</div>
+                        <div class="case-metrics">
+                            <div class="case-metric">
+                                <div class="case-metric-value">~600K</div>
+                                <div class="case-metric-label">₽/мес прибыль</div>
+                            </div>
+                            <div class="case-metric">
+                                <div class="case-metric-value">13</div>
+                                <div class="case-metric-label">мес окупаемость</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="case-card animate-on-scroll">
+                    <div class="case-image">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="case-content">
+                        <div class="case-location">Рязань</div>
+                        <div class="case-city">Алмаз Авто</div>
+                        <div class="case-date"><i class="fas fa-calendar-alt"></i> Запуск: 06.2024</div>
+                        <div class="case-metrics">
+                            <div class="case-metric">
+                                <div class="case-metric-value">~700K</div>
+                                <div class="case-metric-label">₽/мес прибыль</div>
+                            </div>
+                            <div class="case-metric">
+                                <div class="case-metric-value">12</div>
+                                <div class="case-metric-label">мес окупаемость</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What You Get Section - NEW -->
+    <section class="what-you-get" id="what-you-get">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">Пакет франшизы</span>
+                <h2 class="section-title">Что вы получаете?</h2>
+                <p class="section-subtitle">Полный цикл от идеи до запуска</p>
+            </div>
+
+            <div class="get-grid">
+                <div class="get-column animate-on-scroll">
+                    <div class="get-column-title">
+                        <i class="fas fa-cogs"></i>
+                        Оборудование
+                    </div>
+                    <ul class="get-list">
+                        <li><i class="fas fa-check"></i> Робот-шаттл с 18 форсунками</li>
+                        <li><i class="fas fa-check"></i> Встроенная сушка</li>
+                        <li><i class="fas fa-check"></i> Мойка днища</li>
+                        <li><i class="fas fa-check"></i> Профессиональная химия</li>
+                        <li><i class="fas fa-check"></i> Терминал оплаты</li>
+                        <li><i class="fas fa-check"></i> Гарантия 2 года</li>
+                    </ul>
+                </div>
+
+                <div class="get-column animate-on-scroll">
+                    <div class="get-column-title">
+                        <i class="fas fa-headset"></i>
+                        Поддержка
+                    </div>
+                    <ul class="get-list">
+                        <li><i class="fas fa-check"></i> Помощь в выборе локации</li>
+                        <li><i class="fas fa-check"></i> Проектирование и согласования</li>
+                        <li><i class="fas fa-check"></i> Монтаж и пусконаладка</li>
+                        <li><i class="fas fa-check"></i> Обучение персонала</li>
+                        <li><i class="fas fa-check"></i> Техподдержка 24/7</li>
+                        <li><i class="fas fa-check"></i> Персональный менеджер</li>
+                    </ul>
+                </div>
+
+                <div class="get-column animate-on-scroll">
+                    <div class="get-column-title">
+                        <i class="fas fa-bullhorn"></i>
+                        Маркетинг
+                    </div>
+                    <ul class="get-list">
+                        <li><i class="fas fa-check"></i> Регистрация на геосервисах</li>
+                        <li><i class="fas fa-check"></i> Таргетированная реклама</li>
+                        <li><i class="fas fa-check"></i> Контекстная реклама</li>
+                        <li><i class="fas fa-check"></i> SMM и контент</li>
+                        <li><i class="fas fa-check"></i> База креативов</li>
+                        <li><i class="fas fa-check"></i> Программа лояльности</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Objects Section - UNCHANGED -->
     <section class="objects" id="objects">
         <div class="container">
             <div class="section-header animate-on-scroll">
                 <span class="section-tag" style="color: var(--deep-blue); opacity: 0.6;">Реальные объекты</span>
                 <h2 class="section-title">Работающие объекты</h2>
-                <p class="section-subtitle">Убедитесь сами — наши робомойки успешно функционируют в разных регионах России. Реальный бизнес с реальными результатами.</p>
+                <p class="section-subtitle">Убедитесь сами — наши робомойки успешно функционируют в разных регионах России</p>
             </div>
 
             <div class="objects-grid">
@@ -1481,10 +1954,6 @@
                             <i class="fas fa-location-arrow"></i>
                             ул. Грибоедова, 2
                         </div>
-                        <span class="object-badge">
-                            <i class="fas fa-robot"></i>
-                            Роботизированная автомойка
-                        </span>
                     </div>
                 </div>
 
@@ -1528,10 +1997,6 @@
                             <i class="fas fa-location-arrow"></i>
                             Жигулёвская база
                         </div>
-                        <span class="object-badge">
-                            <i class="fas fa-robot"></i>
-                            Роботизированная автомойка
-                        </span>
                     </div>
                 </div>
 
@@ -1587,10 +2052,6 @@
                             <i class="fas fa-location-arrow"></i>
                             Робомойка на территории комплекса
                         </div>
-                        <span class="object-badge">
-                            <i class="fas fa-robot"></i>
-                            Роботизированная автомойка
-                        </span>
                     </div>
                 </div>
 
@@ -1642,316 +2103,63 @@
                             <i class="fas fa-location-arrow"></i>
                             ул. Богдана Хмельницкого, 16
                         </div>
-                        <span class="object-badge">
-                            <i class="fas fa-robot"></i>
-                            Роботизированная автомойка
-                        </span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Market Section -->
-    <section class="market" id="market">
-        <div class="container">
-            <div class="section-header animate-on-scroll">
-                <span class="section-tag">Рынок</span>
-                <h2 class="section-title">Рынок робомоек растет на 23-30% в год</h2>
-                <p class="section-subtitle">Автоматизация сервисов — приоритетное направление 2026. Классические мойки устаревают, роботизация замещает ручной труд.</p>
-            </div>
-
-            <div class="market-grid">
-                <div class="market-card animate-on-scroll">
-                    <div class="market-number number-font">18.2</div>
-                    <div class="market-label">млрд ₽</div>
-                    <div class="market-desc">Потенциальная емкость рынка робомоек в России</div>
-                </div>
-                <div class="market-card animate-on-scroll">
-                    <div class="market-number number-font">6</div>
-                    <div class="market-label">млрд ₽</div>
-                    <div class="market-desc">Текущий объем — заполнено только 33%</div>
-                </div>
-                <div class="market-card animate-on-scroll">
-                    <div class="market-number number-font">x3</div>
-                    <div class="market-label">рост потенциала</div>
-                    <div class="market-desc">Возможность масштабирования в ближайшие 5 лет</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Comparison Section -->
-    <section class="comparison" id="comparison">
-        <div class="container">
-            <div class="section-header animate-on-scroll">
-                <span class="section-tag">Почему мы</span>
-                <h2 class="section-title">Чем отличается модель «Чистая Аура» от альтернатив</h2>
-            </div>
-
-            <div class="comparison-grid">
-                <div class="comparison-card animate-on-scroll">
-                    <h3 class="comparison-title">Ручные мойки</h3>
-                    <ul class="comparison-list">
-                        <li>Зависимость от персонала</li>
-                        <li>Текучка кадров до 40% в год</li>
-                        <li>Непредсказуемое качество</li>
-                        <li>Ограниченное время работы</li>
-                    </ul>
-                    <div class="comparison-metric">↓ 35%</div>
-                    <div style="font-size: 14px; color: var(--text-gray);">Средняя рентабельность</div>
-                </div>
-
-                <div class="comparison-card animate-on-scroll">
-                    <h3 class="comparison-title">Конкуренты</h3>
-                    <ul class="comparison-list">
-                        <li>Вход от 14 млн ₽</li>
-                        <li>Запуск 3-6 месяцев</li>
-                        <li>Требуется оператор</li>
-                        <li>Низкая эффективность</li>
-                    </ul>
-                    <div class="comparison-metric">↓ 50%</div>
-                    <div style="font-size: 14px; color: var(--text-gray);">Средняя доходность</div>
-                </div>
-
-                <div class="comparison-card featured animate-on-scroll">
-                    <h3 class="comparison-title">Чистая Аура</h3>
-                    <ul class="comparison-list">
-                        <li>Полная автоматизация 24/7</li>
-                        <li>Запуск от 30 дней</li>
-                        <li>Без персонала на точке</li>
-                        <li>Премиальное качество</li>
-                    </ul>
-                    <div class="comparison-metric">↑ 80%</div>
-                    <div style="font-size: 14px; color: var(--text-gray);">Максимальная доходность</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Economics Section -->
-    <section class="economics" id="economics">
-        <div class="container">
-            <div class="section-header animate-on-scroll">
-                <span class="section-tag">Финансовая модель</span>
-                <h2 class="section-title">Проверенная экономика на 30+ объектах</h2>
-            </div>
-
-            <div class="economics-grid">
-                <div class="investment-block animate-on-scroll">
-                    <h3 class="investment-title">Инвестиции на старт</h3>
-                    <div class="investment-item">
-                        <span>Робот-шаттл с 18 форсунками</span>
-                        <span class="number-font">4 000 000 ₽</span>
-                    </div>
-                    <div class="investment-item">
-                        <span>Оборудование и комплектация</span>
-                        <span class="number-font">1 800 000 ₽</span>
-                    </div>
-                    
-                    <div class="investment-item">
-                        <span>Наружная реклама и вывески</span>
-                        <span class="number-font">350 000 ₽</span>
-                    </div>
-                    <div class="investment-item">
-                        <span>Стартовый запас химии</span>
-                        <span class="number-font">200 000 ₽</span>
-                    </div>
-                    <div class="investment-item">
-                        <span>Паушальный взнос франшизы</span>
-                        <span class="number-font">150 000 ₽</span>
-                    </div>
-                    <div class="investment-item total">
-                        <span>ИТОГО</span>
-                        <span class="number-font">6 500 000 ₽</span>
-                    </div>
-                </div>
-
-                <div class="animate-on-scroll">
-                    <h3 class="investment-title">Себестоимость программ</h3>
-                    <div class="table-container">
-                        <table class="data-table">
-                            <thead>
-                                <tr>
-                                    <th>Программа</th>
-                                    <th>Цена</th>
-                                    <th>Себест.</th>
-                                    <th>Маржа</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Экспресс (без сушки)</td>
-                                    <td>300 ₽</td>
-                                    <td>50 ₽</td>
-                                    <td class="highlight">83%</td>
-                                </tr>
-                                <tr>
-                                    <td>Оптимальная</td>
-                                    <td>450 ₽</td>
-                                    <td>92 ₽</td>
-                                    <td class="highlight">80%</td>
-                                </tr>
-                                <tr>
-                                    <td>Стандартная (с воском)</td>
-                                    <td>600 ₽</td>
-                                    <td>120 ₽</td>
-                                    <td class="highlight">80%</td>
-                                </tr>
-                                <tr>
-                                    <td>Премиум (полный цикл)</td>
-                                    <td>750 ₽</td>
-                                    <td>134 ₽</td>
-                                    <td class="highlight">82%</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div style="margin-top: 20px; padding: 20px; background: rgba(0, 188, 212, 0.1); border-radius: 8px;">
-                        <div style="display: flex; justify-content: space-between; margin-bottom: 10px;">
-                            <span>Средний чек:</span>
-                            <span class="number-font" style="color: var(--logo-blue); font-weight: 700;">480 ₽</span>
-                        </div>
-                        <div style="display: flex; justify-content: space-between;">
-                            <span>Средняя маржинальность:</span>
-                            <span class="number-font" style="color: var(--logo-blue); font-weight: 700;">81%</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="scenarios">
-                <div class="scenario-card animate-on-scroll">
-                    <div class="scenario-title">Консервативный</div>
-                    <div class="scenario-metric">
-                        <div class="scenario-label">Загрузка</div>
-                        <div class="scenario-value">60 авто/день</div>
-                    </div>
-                    <div class="scenario-metric">
-                        <div class="scenario-label">Выручка/мес</div>
-                        <div class="scenario-value">864 000 ₽</div>
-                    </div>
-                    <div class="scenario-metric">
-                        <div class="scenario-label">Чистая прибыль</div>
-                        <div class="scenario-value" style="color: var(--logo-blue);">420 000 ₽</div>
-                    </div>
-                    <div class="scenario-metric">
-                        <div class="scenario-label">Окупаемость</div>
-                        <div class="scenario-value">15-18 мес</div>
-                    </div>
-                </div>
-
-                <div class="scenario-card middle animate-on-scroll">
-                    <div class="scenario-title">Базовый</div>
-                    <div class="scenario-metric">
-                        <div class="scenario-label">Загрузка</div>
-                        <div class="scenario-value">90 авто/день</div>
-                    </div>
-                    <div class="scenario-metric">
-                        <div class="scenario-label">Выручка/мес</div>
-                        <div class="scenario-value">1 296 000 ₽</div>
-                    </div>
-                    <div class="scenario-metric">
-                        <div class="scenario-label">Чистая прибыль</div>
-                        <div class="scenario-value" style="color: var(--logo-blue);">750 000 ₽</div>
-                    </div>
-                    <div class="scenario-metric">
-                        <div class="scenario-label">Окупаемость</div>
-                        <div class="scenario-value">12-14 мес</div>
-                    </div>
-                </div>
-
-                <div class="scenario-card animate-on-scroll">
-                    <div class="scenario-title">Оптимистичный</div>
-                    <div class="scenario-metric">
-                        <div class="scenario-label">Загрузка</div>
-                        <div class="scenario-value">120 авто/день</div>
-                    </div>
-                    <div class="scenario-metric">
-                        <div class="scenario-label">Выручка/мес</div>
-                        <div class="scenario-value">1 728 000 ₽</div>
-                    </div>
-                    <div class="scenario-metric">
-                        <div class="scenario-label">Чистая прибыль</div>
-                        <div class="scenario-value" style="color: var(--logo-blue);">1 100 000 ₽</div>
-                    </div>
-                    <div class="scenario-metric">
-                        <div class="scenario-label">Окупаемость</div>
-                        <div class="scenario-value">10-12 мес</div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="economics-summary">
-                <div class="summary-item animate-on-scroll">
-                    <span class="summary-number number-font">49%</span>
-                    <div class="summary-label">ROI годовых</div>
-                </div>
-                <div class="summary-item animate-on-scroll">
-                    <span class="summary-number number-font">2-3</span>
-                    <div class="summary-label">мес до точки безубыточности</div>
-                </div>
-                <div class="summary-item animate-on-scroll">
-                    <span class="summary-number number-font">5.4</span>
-                    <div class="summary-label">млн ₽ чистой прибыли/год</div>
-                </div>
-                <div class="summary-item animate-on-scroll">
-                    <span class="summary-number number-font">×2</span>
-                    <div class="summary-label">ниже порог входа</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Locations Section -->
+    <!-- Locations Section - UNCHANGED -->
     <section class="locations" id="locations">
         <div class="container">
             <div class="section-header animate-on-scroll">
-                <span class="section-tag" style="color: var(--deep-blue); opacity: 0.6;">Локации</span>
-                <h2 class="section-title">Работающие объекты и готовые локации</h2>
-                <p class="section-subtitle">Не нужно искать площадку — мы уже сделали это. Проверенные точки с высоким трафиком.</p>
+                <span class="section-tag">Локации</span>
+                <h2 class="section-title">Готовые локации к запуску</h2>
+                <p class="section-subtitle">Не нужно искать площадку — мы уже сделали это</p>
             </div>
 
             <div class="locations-stats">
                 <div class="location-stat animate-on-scroll">
-                    <div class="location-stat-number number-font">30+</div>
+                    <div class="location-stat-number">30+</div>
                     <div class="location-stat-label">работающих объектов</div>
                 </div>
                 <div class="location-stat animate-on-scroll">
-                    <div class="location-stat-number number-font">6</div>
+                    <div class="location-stat-number">6</div>
                     <div class="location-stat-label">горячих локаций</div>
                 </div>
                 <div class="location-stat animate-on-scroll">
-                    <div class="location-stat-number number-font">800+</div>
-                    <div class="location-stat-label">авто/час макс. трафик</div>
+                    <div class="location-stat-number">800+</div>
+                    <div class="location-stat-label">авто/час трафик</div>
                 </div>
                 <div class="location-stat animate-on-scroll">
-                    <div class="location-stat-number number-font">30</div>
+                    <div class="location-stat-number">30</div>
                     <div class="location-stat-label">дней до запуска</div>
                 </div>
             </div>
 
             <div class="locations-list">
-                <div class="location-item animate-on-scroll">
+                <div class="location-item animate-on-scroll hot">
                     <div class="location-info">
-                        <h3>Звенигородская эстакада</h3>
+                        <h3>Звенигородская эстакада <span class="hot-badge"><i class="fas fa-fire"></i> Горячее</span></h3>
                         <div class="location-meta">
                             <span><i class="fas fa-car"></i> 800+ авто/час</span>
-                            <span><i class="fas fa-map-marker-alt"></i> Рекомендуем 4-5 постов</span>
+                            <span><i class="fas fa-map-marker-alt"></i> 4-5 постов</span>
                         </div>
+                        <div class="location-urgency"><i class="fas fa-clock"></i> Осталось 1 место</div>
                     </div>
-                    <span class="location-badge">Готова к запуску</span>
+                    <span class="location-badge urgent">Забронировать</span>
                 </div>
 
-                <div class="location-item animate-on-scroll">
+                <div class="location-item animate-on-scroll hot">
                     <div class="location-info">
-                        <h3>Марьина Роща</h3>
+                        <h3>Марьина Роща <span class="hot-badge"><i class="fas fa-fire"></i> Горячее</span></h3>
                         <div class="location-meta">
                             <span><i class="fas fa-car"></i> 400-1000 авто/час</span>
-                            <span><i class="fas fa-map-marker-alt"></i> Рекомендуем 4-6 постов</span>
+                            <span><i class="fas fa-map-marker-alt"></i> 4-6 постов</span>
                         </div>
+                        <div class="location-urgency"><i class="fas fa-clock"></i> Осталось 2 места</div>
                     </div>
-                    <span class="location-badge">Готова к запуску</span>
+                    <span class="location-badge urgent">Забронировать</span>
                 </div>
 
                 <div class="location-item animate-on-scroll">
@@ -1959,10 +2167,11 @@
                         <h3>Красногорск, Вокзальная</h3>
                         <div class="location-meta">
                             <span><i class="fas fa-car"></i> 400-600 авто/час</span>
-                            <span><i class="fas fa-map-marker-alt"></i> Рекомендуем 2-4 поста</span>
+                            <span><i class="fas fa-map-marker-alt"></i> 2-4 поста</span>
                         </div>
+                        <div class="location-urgency"><i class="fas fa-clock"></i> Осталось 3 места</div>
                     </div>
-                    <span class="location-badge">Готова к запуску</span>
+                    <span class="location-badge">Готова</span>
                 </div>
 
                 <div class="location-item animate-on-scroll">
@@ -1970,10 +2179,11 @@
                         <h3>Керамический проезд</h3>
                         <div class="location-meta">
                             <span><i class="fas fa-car"></i> 400-600 авто/час</span>
-                            <span><i class="fas fa-map-marker-alt"></i> Рекомендуем 2-3 поста</span>
+                            <span><i class="fas fa-map-marker-alt"></i> 2-3 поста</span>
                         </div>
+                        <div class="location-urgency"><i class="fas fa-clock"></i> Осталось 2 места</div>
                     </div>
-                    <span class="location-badge">Готова к запуску</span>
+                    <span class="location-badge">Готова</span>
                 </div>
 
                 <div class="location-item animate-on-scroll">
@@ -1981,10 +2191,11 @@
                         <h3>Новопетровский проезд</h3>
                         <div class="location-meta">
                             <span><i class="fas fa-car"></i> 300-500 авто/час</span>
-                            <span><i class="fas fa-map-marker-alt"></i> Рекомендуем 3-4 поста</span>
+                            <span><i class="fas fa-map-marker-alt"></i> 3-4 поста</span>
                         </div>
+                        <div class="location-urgency"><i class="fas fa-clock"></i> Осталось 4 места</div>
                     </div>
-                    <span class="location-badge">Готова к запуску</span>
+                    <span class="location-badge">Готова</span>
                 </div>
 
                 <div class="location-item animate-on-scroll">
@@ -1992,136 +2203,11 @@
                         <h3>Ул. Зорге</h3>
                         <div class="location-meta">
                             <span><i class="fas fa-car"></i> 400-600 авто/час</span>
-                            <span><i class="fas fa-map-marker-alt"></i> Рекомендуем 4 поста</span>
+                            <span><i class="fas fa-map-marker-alt"></i> 4 поста</span>
                         </div>
+                        <div class="location-urgency"><i class="fas fa-clock"></i> Осталось 3 места</div>
                     </div>
-                    <span class="location-badge">Готова к запуску</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Risks Section -->
-    <section class="risks" id="risks">
-        <div class="container">
-            <div class="section-header animate-on-scroll">
-                <span class="section-tag">Безопасность</span>
-                <h2 class="section-title">Управление рисками</h2>
-                <p class="section-subtitle">Как защищаем капитал партнеров. Прозрачность на каждом этапе.</p>
-            </div>
-
-            <div class="risks-grid">
-                <div class="risk-card animate-on-scroll">
-                    <div class="risk-header">
-                        <div class="risk-icon">
-                            <i class="fas fa-snowflake"></i>
-                        </div>
-                        <h3 class="risk-title">Сезонность</h3>
-                    </div>
-                    <div class="risk-solution">
-                        <div class="risk-solution-label">Решение</div>
-                        <p>Роботы работают круглый год. Зимний пик +30% к загрузке (грязь, соль). Летняя программа «Экспресс» поддерживает трафик. Диверсификация по сезонным тарифам.</p>
-                    </div>
-                </div>
-
-                <div class="risk-card animate-on-scroll">
-                    <div class="risk-header">
-                        <div class="risk-icon">
-                            <i class="fas fa-map-marked-alt"></i>
-                        </div>
-                        <h3 class="risk-title">Локация</h3>
-                    </div>
-                    <div class="risk-solution">
-                        <div class="risk-solution-label">Решение</div>
-                        <p>Предоставляем только верифицированные точки. Анализ трафика 24/7 перед запуском. Юридическая чистота аренды. 30+ успешных кейсов локаций.</p>
-                    </div>
-                </div>
-
-                <div class="risk-card animate-on-scroll">
-                    <div class="risk-header">
-                        <div class="risk-icon">
-                            <i class="fas fa-chart-line"></i>
-                        </div>
-                        <h3 class="risk-title">Загрузка</h3>
-                    </div>
-                    <div class="risk-solution">
-                        <div class="risk-solution-label">Решение</div>
-                        <p>Точка безубыточности — 20-25 авто/день (15% от мощности). Средняя загрузка действующих объектов — 60-90 авто. Маркетинговая поддержка на старте.</p>
-                    </div>
-                </div>
-
-                <div class="risk-card animate-on-scroll">
-                    <div class="risk-header">
-                        <div class="risk-icon">
-                            <i class="fas fa-cogs"></i>
-                        </div>
-                        <h3 class="risk-title">Технология</h3>
-                    </div>
-                    <div class="risk-solution">
-                        <div class="risk-solution-label">Решение</div>
-                        <p>Оборудование Siemens, Pepperl+Fuchs — мировые бренды. Гарантия 2 года. Сервис 24/7. Запасные части на складе. Проверенные поставщики, SLA.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Support Section -->
-    <section class="support" id="support">
-        <div class="container">
-            <div class="section-header animate-on-scroll">
-                <span class="section-tag">Сопровождение</span>
-                <h2 class="section-title">Полный цикл поддержки</h2>
-                <p class="section-subtitle">От участка до прибыли — берем на себя всё. Вы получаете готовый бизнес.</p>
-            </div>
-
-            <div class="support-grid">
-                <div class="support-card animate-on-scroll">
-                    <div class="support-icon">
-                        <i class="fas fa-search-location"></i>
-                    </div>
-                    <h3 class="support-title">Локация</h3>
-                    <p class="support-desc">Анализ трафика, конкурентов, инженерных условий. Переговоры с арендодателем.</p>
-                </div>
-
-                <div class="support-card animate-on-scroll">
-                    <div class="support-icon">
-                        <i class="fas fa-drafting-compass"></i>
-                    </div>
-                    <h3 class="support-title">Проектирование</h3>
-                    <p class="support-desc">Дизайн-проект, техническое задание. Согласования с надзорными органами.</p>
-                </div>
-
-                <div class="support-card animate-on-scroll">
-                    <div class="support-icon">
-                        <i class="fas fa-tools"></i>
-                    </div>
-                    <h3 class="support-title">Монтаж</h3>
-                    <p class="support-desc">Поставка, установка, пусконаладка. Проверка по чек-листу.</p>
-                </div>
-
-                <div class="support-card animate-on-scroll">
-                    <div class="support-icon">
-                        <i class="fas fa-graduation-cap"></i>
-                    </div>
-                    <h3 class="support-title">Обучение</h3>
-                    <p class="support-desc">Онлайн-школа, 50+ уроков. Стажировка на действующих точках.</p>
-                </div>
-
-                <div class="support-card animate-on-scroll">
-                    <div class="support-icon">
-                        <i class="fas fa-bullhorn"></i>
-                    </div>
-                    <h3 class="support-title">Маркетинг</h3>
-                    <p class="support-desc">ГЕОсервисы, таргет, контекст. База креативов, SMM.</p>
-                </div>
-
-                <div class="support-card animate-on-scroll">
-                    <div class="support-icon">
-                        <i class="fas fa-headset"></i>
-                    </div>
-                    <h3 class="support-title">Поддержка 24/7</h3>
-                    <p class="support-desc">Персональный менеджер. Техническая поддержка. «Тайный покупатель».</p>
+                    <span class="location-badge">Готова</span>
                 </div>
             </div>
         </div>
@@ -2131,12 +2217,12 @@
     <section class="cta" id="contact">
         <div class="container">
             <div class="cta-content">
-                <h2 class="animate-on-scroll">Получить инвестиционное предложение</h2>
-                <p class="cta-subtitle animate-on-scroll">PDF с финансовой моделью, сравнением форматов и примерами работающих объектов</p>
+                <h2 class="animate-on-scroll">Получите бизнес-план за 2 минуты</h2>
+                <p class="cta-subtitle animate-on-scroll">Расчёт финансовой модели для вашего города</p>
                 
                 <div class="form-container animate-on-scroll">
-                    <!-- Formspree Form -->
-                    <form id="investorForm" action="https://formspree.io/f/mkovwvyy" method="POST">
+                    <!-- Formspree Form - SHORTENED -->
+                    <form id="investorForm" action="https://formspree.io/f/mkovwvyy  " method="POST">
                         <!-- Hidden fields for Formspree -->
                         <input type="hidden" name="_subject" value="Новая заявка с сайта Чистая Аура">
                         <input type="hidden" name="_template" value="table">
@@ -2152,37 +2238,15 @@
                             </div>
                         </div>
                         
-                        <div class="form-group">
-                            <label for="email">Email *</label>
-                            <input type="email" id="email" name="email" required placeholder="example@mail.ru">
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="format">Интересует формат *</label>
-                            <select id="format" name="format" required>
-                                <option value="">Выберите вариант</option>
-                                <option value="Один пост (6.5 млн ₽)">Один пост (6.5 млн ₽)</option>
-                                <option value="Два поста (13 млн ₽)">Два поста (13 млн ₽)</option>
-                                <option value="Сеть 3+ постов (от 19.5 млн ₽)">Сеть 3+ постов (от 19.5 млн ₽)</option>
-                                <option value="Нужна консультация">Нужна консультация</option>
-                            </select>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="comment">Комментарий (необязательно)</label>
-                            <input type="text" id="comment" name="comment" placeholder="Ваши вопросы или предпочтения">
-                        </div>
-                        
                         <button type="submit" class="btn-submit" id="submitBtn">
-                            Получить предложение
+                            Получить бизнес-план
                             <i class="fas fa-paper-plane" style="margin-left: 8px;"></i>
                         </button>
+                        
                         <p class="policy-text">
-  Нажимая кнопку, вы соглашаетесь с
-  <a href="privacy-policy.pdf" target="_blank">
-  обработкой персональных данных
-</a>
-</p>
+                            Нажимая кнопку, вы соглашаетесь с
+                            <a href="privacy-policy.pdf" target="_blank">обработкой персональных данных</a>
+                        </p>
 
                         <div class="form-status" id="formStatus"></div>
                     </form>
@@ -2197,7 +2261,7 @@
                         <i class="fas fa-envelope"></i>
                         <span>partners@chistaya-aura.ru</span>
                     </a>
-                    <a href="https://t.me/nik_katrenko" class="contact-item" target="_blank">
+                    <a href="https://t.me/nik_katrenko  " class="contact-item" target="_blank">
                         <i class="fab fa-telegram"></i>
                         <span>Telegram</span>
                     </a>
@@ -2255,10 +2319,8 @@
             const track = sliderElement.querySelector('.object-slider-track');
             const dots = sliderElement.querySelectorAll('.slider-dot');
 
-            // Update track position
             track.style.transform = `translateX(-${sliders[sliderId].current * 100}%)`;
 
-            // Update dots
             dots.forEach((dot, index) => {
                 dot.classList.toggle('active', index === sliders[sliderId].current);
             });
@@ -2274,50 +2336,7 @@
         }
 
         // Formspree Configuration
-        const FORMSPREE_URL = 'https://formspree.io/f/mkovwvyy';
-
-        // Animate numbers on scroll
-        function animateNumbers() {
-            const numbers = document.querySelectorAll('.stat-number[data-target]');
-            
-            numbers.forEach(num => {
-                const target = parseFloat(num.getAttribute('data-target'));
-                const isFloat = target % 1 !== 0;
-                const duration = 2000;
-                const step = target / (duration / 16);
-                let current = 0;
-                
-                const updateNumber = () => {
-                    current += step;
-                    if (current < target) {
-                        num.textContent = isFloat ? current.toFixed(1) : Math.floor(current);
-                        requestAnimationFrame(updateNumber);
-                    } else {
-                        num.textContent = isFloat ? target.toFixed(1) : target;
-                        if (num.getAttribute('data-target') === '30') {
-                            num.textContent = target + '+';
-                        } else if (num.getAttribute('data-target') === '80') {
-                            num.textContent = 'до ' + target + '%';
-                        } else if (num.getAttribute('data-target') === '12') {
-                            num.textContent = target + '-18';
-                        } else if (num.getAttribute('data-target') === '6.5') {
-                            num.textContent = 'от ' + target;
-                        }
-                    }
-                };
-                
-                const observer = new IntersectionObserver((entries) => {
-                    entries.forEach(entry => {
-                        if (entry.isIntersecting) {
-                            updateNumber();
-                            observer.unobserve(entry.target);
-                        }
-                    });
-                }, { threshold: 0.5 });
-                
-                observer.observe(num);
-            });
-        }
+        const FORMSPREE_URL = 'https://formspree.io/f/mkovwvyy  ';
 
         // Scroll animations
         function initScrollAnimations() {
@@ -2402,14 +2421,14 @@
                 
                 if (response.ok) {
                     formStatus.className = 'form-status success';
-                    formStatus.innerHTML = '<i class="fas fa-check-circle"></i> Спасибо! Заявка отправлена. Мы свяжемся с вами в течение 15 минут.';
+                    formStatus.innerHTML = '<i class="fas fa-check-circle"></i> Спасибо! Мы свяжемся с вами в течение 15 минут.';
                     form.reset();
                 } else {
                     throw new Error('Server error');
                 }
             } catch (error) {
                 formStatus.className = 'form-status error';
-                formStatus.innerHTML = '<i class="fas fa-exclamation-circle"></i> Ошибка отправки. Пожалуйста, позвоните нам: +7 (983) 602-01-02';
+                formStatus.innerHTML = '<i class="fas fa-exclamation-circle"></i> Ошибка отправки. Позвоните нам: +7 (983) 602-01-02';
             }
             
             // Reset button
@@ -2419,7 +2438,6 @@
 
         // Initialize
         document.addEventListener('DOMContentLoaded', function() {
-            animateNumbers();
             initScrollAnimations();
             initAutoPlay();
         });
